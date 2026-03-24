@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — The Psilosopher</title>
+  <meta name="description" content="Get in touch with The Psilosopher. Questions about integration, the program, or just want to connect — reach out." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            earth: { 50:'#fdf8f0', 100:'#f5ead4', 200:'#e8d5a8', 300:'#d4b978', 400:'#c4a455', 500:'#a8893d', 600:'#8a6e2f', 700:'#6b5424', 800:'#4d3c1a', 900:'#2f2510' },
+            forest: { 50:'#f0f7f0', 100:'#d4e8d4', 200:'#a8d1a8', 300:'#6db56d', 400:'#4a9a4a', 500:'#2d7a2d', 600:'#1f5e1f', 700:'#184818', 800:'#123312', 900:'#0c200c' },
+            mystic: { 50:'#f5f0fa', 100:'#e6d9f2', 200:'#c9a8e4', 300:'#a870d1', 400:'#8b4abf', 500:'#6e2da3', 600:'#571f85', 700:'#431868', 800:'#30114b', 900:'#1e0b30' },
+            gold: { 50:'#fffdf0', 100:'#fff8d4', 200:'#ffeda8', 300:'#ffe070', 400:'#ffd43b', 500:'#e6b800', 600:'#b89300', 700:'#8a6e00', 800:'#5c4a00', 900:'#2e2500' }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-earth-50 text-earth-900 font-sans">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-mystic-500 to-forest-600 flex items-center justify-center">
+          <span class="text-white font-serif font-bold text-lg">P</span>
+        </div>
+        <span class="font-serif font-bold text-xl tracking-tight">The Psilosopher</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Home</a>
+        <a href="/about" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">About</a>
+        <a href="/blog" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Blog</a>
+        <a href="/resources" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Resources</a>
+        <a href="/contact" class="px-5 py-2 bg-mystic-600 text-white rounded-full text-sm font-medium hover:bg-mystic-700 transition-colors">Get in Touch</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-earth-800">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-earth-200">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="/" class="text-sm font-medium hover:text-mystic-600">Home</a>
+        <a href="/about" class="text-sm font-medium hover:text-mystic-600">About</a>
+        <a href="/blog" class="text-sm font-medium hover:text-mystic-600">Blog</a>
+        <a href="/resources" class="text-sm font-medium hover:text-mystic-600">Resources</a>
+        <a href="/contact" class="text-sm font-medium text-mystic-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden pt-24">
+    <div class="absolute inset-0 bg-gradient-to-br from-earth-900 via-forest-900 to-mystic-900"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 60% 30%, rgba(110, 45, 163, 0.5) 0%, transparent 50%), radial-gradient(circle at 20% 70%, rgba(45, 122, 45, 0.4) 0%, transparent 50%);"></div>
+    <div class="particles absolute inset-0 overflow-hidden"></div>
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <p class="text-gold-400 font-medium tracking-[0.3em] uppercase text-sm mb-6">Let's Talk</p>
+      <h1 class="font-serif text-5xl md:text-7xl font-bold text-white leading-[1.1] mb-6">
+        Get in <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-mystic-300">Touch</span>
+      </h1>
+      <p class="text-earth-200 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">Questions, collaboration, or just reaching out — I read every message and respond to most of them.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-5 gap-16 items-start">
+
+        <!-- Left: Info -->
+        <div class="lg:col-span-2 space-y-10">
+          <div>
+            <p class="text-mystic-600 font-medium tracking-[0.2em] uppercase text-sm mb-4">Before You Write</p>
+            <h2 class="font-serif text-3xl font-bold mb-6">What to Expect</h2>
+            <p class="text-earth-600 leading-relaxed">I get a lot of messages. I read all of them. I respond to the ones where I can say something genuinely useful. If your question is answered in the blog or resources, I'll probably point you there. If it's something more personal or complex, I'll write back.</p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-mystic-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-mystic-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Integration questions</h4>
+                <p class="text-earth-600 text-sm">Navigating a difficult experience, unsure what to do with what came up — this is exactly what I'm here for.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-forest-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Content & collaboration</h4>
+                <p class="text-earth-600 text-sm">Guest posts, podcast appearances, research partnerships — if the work aligns, let's talk.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gold-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Program inquiries</h4>
+                <p class="text-earth-600 text-sm">Interested in the integration program or cohort — use this form to get on the list or ask what's right for you.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-earth-100 rounded-2xl p-6 border border-earth-200">
+            <p class="text-earth-500 text-xs font-medium uppercase tracking-widest mb-3">Response time</p>
+            <p class="text-earth-700 text-sm leading-relaxed">I typically respond within 3–5 business days. For urgent harm reduction questions, please contact a crisis line or the <a href="https://firesideproject.org" target="_blank" rel="noopener noreferrer" class="text-mystic-600 underline hover:text-mystic-700">Fireside Project</a> (1-62-FIRESIDE).</p>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="lg:col-span-3">
+          <div class="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-earth-100">
+            <h3 class="font-serif text-2xl font-bold mb-8">Send a Message</h3>
+            <form id="contact-form" class="space-y-6" onsubmit="handleSubmit(event)">
+              <div class="grid sm:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-sm font-medium text-earth-700 mb-2" for="name">Your name</label>
+                  <input type="text" id="name" name="name" required placeholder="First name is fine"
+                    class="w-full px-4 py-3 rounded-xl border border-earth-200 focus:outline-none focus:border-mystic-400 focus:ring-2 focus:ring-mystic-100 transition-all text-earth-900 placeholder-earth-300" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-earth-700 mb-2" for="email">Email address</label>
+                  <input type="email" id="email" name="email" required placeholder="you@example.com"
+                    class="w-full px-4 py-3 rounded-xl border border-earth-200 focus:outline-none focus:border-mystic-400 focus:ring-2 focus:ring-mystic-100 transition-all text-earth-900 placeholder-earth-300" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-earth-700 mb-2" for="subject">What's this about?</label>
+                <select id="subject" name="subject" required
+                  class="w-full px-4 py-3 rounded-xl border border-earth-200 focus:outline-none focus:border-mystic-400 focus:ring-2 focus:ring-mystic-100 transition-all text-earth-900 bg-white">
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="integration">Integration support</option>
+                  <option value="program">Program or cohort inquiry</option>
+                  <option value="collaboration">Collaboration or media</option>
+                  <option value="content">Content question</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-earth-700 mb-2" for="message">Your message</label>
+                <textarea id="message" name="message" required rows="6" placeholder="Tell me what's on your mind. The more context you give, the more useful my response will be."
+                  class="w-full px-4 py-3 rounded-xl border border-earth-200 focus:outline-none focus:border-mystic-400 focus:ring-2 focus:ring-mystic-100 transition-all text-earth-900 placeholder-earth-300 resize-none"></textarea>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <input type="checkbox" id="newsletter" name="newsletter" class="mt-1 rounded border-earth-300 text-mystic-600 focus:ring-mystic-400" />
+                <label for="newsletter" class="text-sm text-earth-600">Also add me to the weekly newsletter — integration insights, new articles, and occasional announcements.</label>
+              </div>
+
+              <button type="submit"
+                class="w-full py-4 bg-gradient-to-r from-mystic-600 to-mystic-500 text-white rounded-xl font-medium hover:from-mystic-700 hover:to-mystic-600 transition-all shadow-lg shadow-mystic-500/20 hover:shadow-mystic-500/30 text-sm">
+                Send Message
+              </button>
+
+              <p class="text-earth-400 text-xs text-center">Your message is private. I don't share personal information with anyone.</p>
+            </form>
+
+            <!-- Success state -->
+            <div id="form-success" class="hidden text-center py-12">
+              <div class="w-20 h-20 rounded-full bg-forest-100 flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <h3 class="font-serif text-2xl font-bold mb-3">Message received.</h3>
+              <p class="text-earth-600 max-w-sm mx-auto">Thank you for reaching out. I'll read your message and get back to you within a few days if there's something useful I can add.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24 px-6 bg-gradient-to-b from-earth-100/50 to-earth-50">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <p class="text-mystic-600 font-medium tracking-[0.2em] uppercase text-sm mb-4">Common Questions</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold">FAQ</h2>
+      </div>
+
+      <div class="space-y-4" id="faq-list">
+
+        <div class="faq-item bg-white rounded-2xl border border-earth-100 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-earth-50 transition-colors">
+            <span class="font-serif text-lg font-bold pr-4">Do you offer 1-on-1 integration sessions?</span>
+            <svg class="faq-icon w-5 h-5 text-mystic-600 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-8 pb-6">
+            <p class="text-earth-600 leading-relaxed">Not in the traditional sense. I work through structured programs rather than open-ended sessions. The cohort program includes group calls and direct access, which is where most of the relational work happens. If you're looking for 1-on-1 support, reach out and I can point you toward resources that might be a better fit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-earth-100 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-earth-50 transition-colors">
+            <span class="font-serif text-lg font-bold pr-4">Is this therapy? Are you a licensed therapist?</span>
+            <svg class="faq-icon w-5 h-5 text-mystic-600 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-8 pb-6">
+            <p class="text-earth-600 leading-relaxed">No and no. This is education and integration coaching — not therapy. I'm not a licensed mental health professional and I don't treat clinical conditions. If you're working through serious trauma, depression, or a psychiatric condition, please involve a qualified clinician. What I offer complements clinical work — it doesn't replace it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-earth-100 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-earth-50 transition-colors">
+            <span class="font-serif text-lg font-bold pr-4">I've never used psychedelics. Is this still relevant to me?</span>
+            <svg class="faq-icon w-5 h-5 text-mystic-600 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-8 pb-6">
+            <p class="text-earth-600 leading-relaxed">Yes. A lot of what I write about — the neuroscience of consciousness, how insight becomes behavior change, the relationship between body and mind — applies whether or not you've ever taken a substance. That said, the program content is designed for people who are actively working with psychedelic experiences or planning to.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-earth-100 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-earth-50 transition-colors">
+            <span class="font-serif text-lg font-bold pr-4">How is this different from other psychedelic education content?</span>
+            <svg class="faq-icon w-5 h-5 text-mystic-600 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-8 pb-6">
+            <p class="text-earth-600 leading-relaxed">Most of what's out there is either clinical and dry, or mystical and vague. I'm trying to thread the needle — grounded in research, informed by philosophy, shaped by hundreds of hours of direct experience. I'll also tell you when something doesn't work, not just when it does. The people I've found most useful in this space are honest about the hard parts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-earth-100 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-earth-50 transition-colors">
+            <span class="font-serif text-lg font-bold pr-4">I'm having a difficult experience right now. What should I do?</span>
+            <svg class="faq-icon w-5 h-5 text-mystic-600 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-8 pb-6">
+            <p class="text-earth-600 leading-relaxed">If you're in acute distress during or immediately after a psychedelic experience, please contact the <strong>Fireside Project</strong> at 1-62-FIRESIDE (1-623-473-7433) — they offer free, confidential support from people who understand psychedelic experiences. For ongoing difficulty in the days or weeks after, my integration resources are a good starting point, and you're welcome to reach out.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-2xl border border-earth-100 overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-earth-50 transition-colors">
+            <span class="font-serif text-lg font-bold pr-4">When does the next cohort open?</span>
+            <svg class="faq-icon w-5 h-5 text-mystic-600 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer hidden px-8 pb-6">
+            <p class="text-earth-600 leading-relaxed">Cohorts run on a quarterly basis. The best way to be notified when the next one opens is to join the newsletter — cohort spots go to the list first, before any public announcement. You can also mention your interest in your contact message and I'll make sure you hear about it.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-earth-900 text-earth-300 py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-mystic-500 to-forest-600 flex items-center justify-center">
+              <span class="text-white font-serif font-bold text-lg">P</span>
+            </div>
+            <span class="font-serif font-bold text-xl text-white">The Psilosopher</span>
+          </div>
+          <p class="text-sm leading-relaxed text-earth-400">Honest, grounded psychedelic education and integration support.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-white mb-4">Explore</h4>
+          <div class="flex flex-col gap-2 text-sm">
+            <a href="/about" class="hover:text-gold-400 transition-colors">About</a>
+            <a href="/blog" class="hover:text-gold-400 transition-colors">Blog</a>
+            <a href="/resources" class="hover:text-gold-400 transition-colors">Resources</a>
+            <a href="/contact" class="hover:text-gold-400 transition-colors">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-white mb-4">Topics</h4>
+          <div class="flex flex-col gap-2 text-sm">
+            <a href="/blog" class="hover:text-gold-400 transition-colors">Integration</a>
+            <a href="/blog" class="hover:text-gold-400 transition-colors">Neuroscience</a>
+            <a href="/blog" class="hover:text-gold-400 transition-colors">Philosophy</a>
+            <a href="/blog" class="hover:text-gold-400 transition-colors">Wellness</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-white mb-4">Connect</h4>
+          <div class="flex flex-col gap-2 text-sm">
+            <a href="#" class="hover:text-gold-400 transition-colors">Instagram</a>
+            <a href="#" class="hover:text-gold-400 transition-colors">LinkedIn</a>
+            <a href="#" class="hover:text-gold-400 transition-colors">TikTok</a>
+            <a href="#" class="hover:text-gold-400 transition-colors">X (Twitter)</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-earth-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-earth-500">&copy; 2026 The Psilosopher. All rights reserved.</p>
+        <p class="text-xs text-earth-600">Educational content only. Not medical advice. Always consult a healthcare professional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contact-form').classList.add('hidden');
+      document.getElementById('form-success').classList.remove('hidden');
+    }
+
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = !answer.classList.contains('hidden');
+
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(el => el.style.transform = '');
+
+      // Open clicked if it was closed
+      if (!isOpen) {
+        answer.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+</body>
+</html>
