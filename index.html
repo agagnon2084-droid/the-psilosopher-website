@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Psilosopher — Psychedelic Health & Wellness</title>
+  <meta name="description" content="Empowering minds through science-backed psychedelic education. Explore the intersection of ancient wisdom and modern research." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            earth: { 50:'#fdf8f0', 100:'#f5ead4', 200:'#e8d5a8', 300:'#d4b978', 400:'#c4a455', 500:'#a8893d', 600:'#8a6e2f', 700:'#6b5424', 800:'#4d3c1a', 900:'#2f2510' },
+            forest: { 50:'#f0f7f0', 100:'#d4e8d4', 200:'#a8d1a8', 300:'#6db56d', 400:'#4a9a4a', 500:'#2d7a2d', 600:'#1f5e1f', 700:'#184818', 800:'#123312', 900:'#0c200c' },
+            mystic: { 50:'#f5f0fa', 100:'#e6d9f2', 200:'#c9a8e4', 300:'#a870d1', 400:'#8b4abf', 500:'#6e2da3', 600:'#571f85', 700:'#431868', 800:'#30114b', 900:'#1e0b30' },
+            gold: { 50:'#fffdf0', 100:'#fff8d4', 200:'#ffeda8', 300:'#ffe070', 400:'#ffd43b', 500:'#e6b800', 600:'#b89300', 700:'#8a6e00', 800:'#5c4a00', 900:'#2e2500' }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="bg-earth-50 text-earth-900 font-sans">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-mystic-500 to-forest-600 flex items-center justify-center">
+          <span class="text-white font-serif font-bold text-lg">P</span>
+        </div>
+        <span class="font-serif font-bold text-xl tracking-tight">The Psilosopher</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Home</a>
+        <a href="/about.html" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">About</a>
+        <a href="/blog.html" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Blog</a>
+        <a href="/resources.html" class="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Resources</a>
+        <a href="/contact.html" class="px-5 py-2 bg-mystic-600 text-white rounded-full text-sm font-medium hover:bg-mystic-700 transition-colors">Get in Touch</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-earth-800">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-earth-200">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="/" class="text-sm font-medium hover:text-mystic-600">Home</a>
+        <a href="/about.html" class="text-sm font-medium hover:text-mystic-600">About</a>
+        <a href="/blog.html" class="text-sm font-medium hover:text-mystic-600">Blog</a>
+        <a href="/resources.html" class="text-sm font-medium hover:text-mystic-600">Resources</a>
+        <a href="/contact.html" class="text-sm font-medium hover:text-mystic-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Animated background -->
+    <div class="absolute inset-0 bg-gradient-to-br from-earth-900 via-mystic-900 to-forest-900"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 20% 50%, rgba(110, 45, 163, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(45, 122, 45, 0.4) 0%, transparent 50%), radial-gradient(circle at 50% 80%, rgba(168, 137, 61, 0.3) 0%, transparent 50%);"></div>
+    <!-- Floating particles -->
+    <div class="particles absolute inset-0 overflow-hidden"></div>
+
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <p class="text-gold-400 font-medium tracking-[0.3em] uppercase text-sm mb-6 animate-fade-in">Science-Backed Psychedelic Education</p>
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] mb-8 animate-fade-in-up">
+        Expand Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-mystic-300 to-forest-300">Mind</span>,<br/>
+        Transform Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-forest-300 via-gold-400 to-mystic-300">Life</span>
+      </h1>
+      <p class="text-earth-200 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up-delay">
+        Where ancient wisdom meets modern neuroscience. Explore the therapeutic potential of psychedelics through evidence-based education and compassionate guidance.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up-delay-2">
+        <a href="/blog.html" class="px-8 py-4 bg-gradient-to-r from-mystic-600 to-mystic-500 text-white rounded-full font-medium hover:from-mystic-700 hover:to-mystic-600 transition-all shadow-lg shadow-mystic-500/25 hover:shadow-mystic-500/40">
+          Start Learning
+        </a>
+        <a href="/about.html" class="px-8 py-4 border-2 border-earth-300/30 text-white rounded-full font-medium hover:bg-white/10 transition-all">
+          Our Mission
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-earth-300/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <p class="text-mystic-600 font-medium tracking-[0.2em] uppercase text-sm mb-4">Our Philosophy</p>
+        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">The Three Pillars</h2>
+        <p class="text-earth-600 max-w-2xl mx-auto text-lg">We believe in a holistic approach that honors both the wisdom of traditional practices and the rigor of modern science.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Pillar 1 -->
+        <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-earth-100 hover:border-mystic-200">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-forest-100 to-forest-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-forest-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-bold mb-3">Science</h3>
+          <p class="text-earth-600 leading-relaxed">Every piece of content we create is grounded in peer-reviewed research and clinical evidence. We translate complex neuroscience into accessible knowledge.</p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-earth-100 hover:border-mystic-200">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-mystic-100 to-mystic-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-mystic-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-bold mb-3">Compassion</h3>
+          <p class="text-earth-600 leading-relaxed">Healing is deeply personal. We create a safe, judgment-free space for exploration, honoring every individual's unique journey toward wellness.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-earth-100 hover:border-mystic-200">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-100 to-gold-200 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </div>
+          <h3 class="font-serif text-2xl font-bold mb-3">Wisdom</h3>
+          <p class="text-earth-600 leading-relaxed">We draw from thousands of years of indigenous knowledge and contemplative traditions, integrating ancient practices with contemporary therapeutic frameworks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Articles -->
+  <section class="py-24 px-6 bg-gradient-to-b from-earth-100/50 to-earth-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-4">
+        <div>
+          <p class="text-mystic-600 font-medium tracking-[0.2em] uppercase text-sm mb-4">From the Journal</p>
+          <h2 class="font-serif text-4xl md:text-5xl font-bold">Latest Insights</h2>
+        </div>
+        <a href="/blog.html" class="text-mystic-600 font-medium hover:text-mystic-700 transition-colors flex items-center gap-2">
+          View all articles
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Article 1 -->
+        <a href="/blog.html" class="group">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-earth-100">
+            <div class="h-56 bg-gradient-to-br from-mystic-800 via-mystic-600 to-forest-700 relative overflow-hidden">
+              <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 30% 70%, rgba(255,212,59,0.3) 0%, transparent 50%);"></div>
+              <div class="absolute bottom-4 left-4">
+                <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Neuroscience</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-earth-400 text-sm mb-2">March 18, 2026</p>
+              <h3 class="font-serif text-xl font-bold mb-3 group-hover:text-mystic-600 transition-colors">The Default Mode Network: How Psilocybin Rewires Thought Patterns</h3>
+              <p class="text-earth-600 text-sm leading-relaxed">New fMRI studies reveal how psilocybin temporarily dissolves rigid neural pathways, opening the door to lasting cognitive flexibility and emotional healing.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="/blog.html" class="group">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-earth-100">
+            <div class="h-56 bg-gradient-to-br from-forest-800 via-forest-600 to-earth-700 relative overflow-hidden">
+              <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 70% 30%, rgba(110,45,163,0.3) 0%, transparent 50%);"></div>
+              <div class="absolute bottom-4 left-4">
+                <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">Integration</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-earth-400 text-sm mb-2">March 12, 2026</p>
+              <h3 class="font-serif text-xl font-bold mb-3 group-hover:text-mystic-600 transition-colors">Integration Practices: Turning Insight Into Lasting Change</h3>
+              <p class="text-earth-600 text-sm leading-relaxed">The psychedelic experience is only the beginning. Learn evidence-based integration techniques that help anchor transformative insights into your daily life.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 3 -->
+        <a href="/blog.html" class="group">
+          <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-earth-100">
+            <div class="h-56 bg-gradient-to-br from-gold-700 via-earth-700 to-mystic-800 relative overflow-hidden">
+              <div class="absolute inset-0 opacity-30" style="background-image: radial-gradient(circle at 50% 50%, rgba(45,122,45,0.3) 0%, transparent 50%);"></div>
+              <div class="absolute bottom-4 left-4">
+                <span class="px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">History</span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-earth-400 text-sm mb-2">March 5, 2026</p>
+              <h3 class="font-serif text-xl font-bold mb-3 group-hover:text-mystic-600 transition-colors">Sacred Mushrooms Through the Ages: A 10,000-Year Timeline</h3>
+              <p class="text-earth-600 text-sm leading-relaxed">From the Tassili cave paintings to modern clinical trials, trace the remarkable journey of humanity's relationship with psychedelic fungi.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Social Proof -->
+  <section class="py-20 px-6 bg-gradient-to-r from-earth-900 via-mystic-900 to-forest-900 text-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="font-serif text-4xl md:text-5xl font-bold text-gold-400 mb-2">50+</p>
+          <p class="text-earth-300 text-sm">Research Articles</p>
+        </div>
+        <div>
+          <p class="font-serif text-4xl md:text-5xl font-bold text-gold-400 mb-2">12K</p>
+          <p class="text-earth-300 text-sm">Community Members</p>
+        </div>
+        <div>
+          <p class="font-serif text-4xl md:text-5xl font-bold text-gold-400 mb-2">200+</p>
+          <p class="text-earth-300 text-sm">Hours of Content</p>
+        </div>
+        <div>
+          <p class="font-serif text-4xl md:text-5xl font-bold text-gold-400 mb-2">8</p>
+          <p class="text-earth-300 text-sm">Expert Contributors</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / CTA -->
+  <section class="py-24 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="w-20 h-20 rounded-full bg-gradient-to-br from-mystic-100 to-forest-100 flex items-center justify-center mx-auto mb-8">
+        <svg class="w-10 h-10 text-mystic-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+      </div>
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Stay Curious</h2>
+      <p class="text-earth-600 text-lg mb-10 max-w-xl mx-auto">Join our newsletter for weekly insights on psychedelic science, integration practices, and the latest research — delivered with care to your inbox.</p>
+      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); this.innerHTML='<p class="text-forest-600 font-medium py-3">Thank you! Check your inbox soon.</p>';">
+        <input type="email" placeholder="your@email.com" required class="flex-1 px-5 py-3 rounded-full border border-earth-200 focus:outline-none focus:border-mystic-400 focus:ring-2 focus:ring-mystic-100 transition-all" />
+        <button type="submit" class="px-8 py-3 bg-mystic-600 text-white rounded-full font-medium hover:bg-mystic-700 transition-colors whitespace-nowrap">Subscribe</button>
+      </form>
+      <p class="text-earth-400 text-xs mt-4">No spam, ever. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-earth-900 text-earth-300 py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-mystic-500 to-forest-600 flex items-center justify-center">
+              <span class="text-white font-serif font-bold text-lg">P</span>
+            </div>
+            <span class="font-serif font-bold text-xl text-white">The Psilosopher</span>
+          </div>
+          <p class="text-sm leading-relaxed text-earth-400">Empowering minds through science-backed psychedelic education and compassionate guidance.</p>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-white mb-4">Explore</h4>
+          <div class="flex flex-col gap-2 text-sm">
+            <a href="/about.html" class="hover:text-gold-400 transition-colors">About Us</a>
+            <a href="/blog.html" class="hover:text-gold-400 transition-colors">Blog</a>
+            <a href="/resources.html" class="hover:text-gold-400 transition-colors">Resources</a>
+            <a href="/contact.html" class="hover:text-gold-400 transition-colors">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-white mb-4">Topics</h4>
+          <div class="flex flex-col gap-2 text-sm">
+            <a href="/blog.html" class="hover:text-gold-400 transition-colors">Neuroscience</a>
+            <a href="/blog.html" class="hover:text-gold-400 transition-colors">Integration</a>
+            <a href="/blog.html" class="hover:text-gold-400 transition-colors">History & Culture</a>
+            <a href="/blog.html" class="hover:text-gold-400 transition-colors">Wellness Practices</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-serif font-bold text-white mb-4">Connect</h4>
+          <div class="flex flex-col gap-2 text-sm">
+            <a href="#" class="hover:text-gold-400 transition-colors">Instagram</a>
+            <a href="#" class="hover:text-gold-400 transition-colors">LinkedIn</a>
+            <a href="#" class="hover:text-gold-400 transition-colors">TikTok</a>
+            <a href="#" class="hover:text-gold-400 transition-colors">X (Twitter)</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-earth-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-earth-500">&copy; 2026 The Psilosopher. All rights reserved.</p>
+        <p class="text-xs text-earth-600">Educational content only. Not medical advice. Always consult a healthcare professional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>
