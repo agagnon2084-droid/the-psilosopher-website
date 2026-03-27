@@ -120,6 +120,16 @@
           </div>
 
           <div class="bg-earth-100 rounded-2xl p-6 border border-earth-200">
+            <p class="text-earth-500 text-xs font-medium uppercase tracking-widest mb-3">Email directly</p>
+            <a href="mailto:hello@thepsilosopher.com" class="flex items-center gap-3 group">
+              <div class="w-10 h-10 rounded-full bg-mystic-100 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-mystic-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <span class="text-mystic-600 font-medium group-hover:text-mystic-700 transition-colors">hello@thepsilosopher.com</span>
+            </a>
+          </div>
+
+          <div class="bg-earth-100 rounded-2xl p-6 border border-earth-200">
             <p class="text-earth-500 text-xs font-medium uppercase tracking-widest mb-3">Response time</p>
             <p class="text-earth-700 text-sm leading-relaxed">I typically respond within 3–5 business days. For urgent harm reduction questions, please contact a crisis line or the <a href="https://firesideproject.org" target="_blank" rel="noopener noreferrer" class="text-mystic-600 underline hover:text-mystic-700">Fireside Project</a> (1-62-FIRESIDE).</p>
           </div>
@@ -130,6 +140,7 @@
           <div class="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-earth-100">
             <h3 class="font-serif text-2xl font-bold mb-8">Send a Message</h3>
             <form id="contact-form" class="space-y-6" onsubmit="handleSubmit(event)">
+              <input type="hidden" name="type" value="contact" />
               <div class="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label class="block text-sm font-medium text-earth-700 mb-2" for="name">Your name</label>
@@ -313,10 +324,26 @@
 
   <script src="/main.js"></script>
   <script>
-    function handleSubmit(e) {
+    var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyxwRGcIaxTNIVbcY-DmoOg02ta8f4IyrX7CxWAeEy5dKC3BtmXsLWVuN-zph-1ZFBY/exec';
+
+    async function handleSubmit(e) {
       e.preventDefault();
-      document.getElementById('contact-form').classList.add('hidden');
-      document.getElementById('form-success').classList.remove('hidden');
+      const form = e.target;
+      const btn  = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      const data = new FormData(form);
+
+      try {
+        await fetch(SCRIPT_URL, { method: 'POST', body: data, mode: 'no-cors' });
+        form.classList.add('hidden');
+        document.getElementById('form-success').classList.remove('hidden');
+      } catch (err) {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        alert('Something went wrong. Please email hello@thepsilosopher.com directly.');
+      }
     }
 
     function toggleFaq(btn) {

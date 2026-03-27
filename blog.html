@@ -302,10 +302,12 @@
       </div>
       <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">New Articles Every Week</h2>
       <p class="text-earth-600 text-lg mb-10 max-w-xl mx-auto">Subscribe to get each new piece delivered straight to your inbox — no algorithms, no noise.</p>
-      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); window.open('https://docs.google.com/forms/d/1ACCeMUICnXqldl2eTMwGruBedMqjVpww3IXr-QBVPBQ/viewform', '_blank'); this.innerHTML='<p class=\'text-forest-600 font-medium py-3\'>Redirecting to signup form...</p>';">
-        <input type="email" placeholder="your@email.com" required class="flex-1 px-5 py-3 rounded-full border border-earth-200 focus:outline-none focus:border-mystic-400 focus:ring-2 focus:ring-mystic-100 transition-all" />
+      <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="handleNewsletter(event)">
+        <input type="hidden" name="type" value="newsletter" />
+        <input type="email" name="email" placeholder="your@email.com" required class="flex-1 px-5 py-3 rounded-full border border-earth-200 focus:outline-none focus:border-mystic-400 focus:ring-2 focus:ring-mystic-100 transition-all" />
         <button type="submit" class="px-8 py-3 bg-mystic-600 text-white rounded-full font-medium hover:bg-mystic-700 transition-colors whitespace-nowrap">Subscribe</button>
       </form>
+      <p id="newsletter-success" class="hidden text-forest-600 font-medium py-3">You're in. Talk soon.</p>
       <p class="text-earth-400 text-xs mt-4">No spam, ever. Unsubscribe anytime.</p>
     </div>
   </section>
@@ -389,6 +391,27 @@
       });
 
       noResults.classList.toggle('hidden', visibleCount > 0);
+    }
+
+    var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyxwRGcIaxTNIVbcY-DmoOg02ta8f4IyrX7CxWAeEy5dKC3BtmXsLWVuN-zph-1ZFBY/exec';
+
+    async function handleNewsletter(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn  = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Subscribing...';
+      btn.disabled = true;
+
+      const data = new FormData(form);
+
+      try {
+        await fetch(SCRIPT_URL, { method: 'POST', body: data, mode: 'no-cors' });
+        form.classList.add('hidden');
+        document.getElementById('newsletter-success').classList.remove('hidden');
+      } catch (err) {
+        btn.textContent = 'Subscribe';
+        btn.disabled = false;
+      }
     }
   </script>
 </body>
