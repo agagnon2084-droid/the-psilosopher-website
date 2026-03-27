@@ -2,5 +2,12 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/blog/default-mode-network", "dest": "/blog/default-mode-network.html" },
+    { "src": "/blog/set-and-setting", "dest": "/blog/set-and-setting.html" },
+    { "src": "/blog/ego-dissolution", "dest": "/blog/ego-dissolution.html" },
+    { "src": "/blog/sacred-mushrooms", "dest": "/blog/sacred-mushrooms.html" },
+    { "src": "/blog/body-keeps-the-trip", "dest": "/blog/body-keeps-the-trip.html" }
+  ]
 }
