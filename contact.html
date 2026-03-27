@@ -333,7 +333,7 @@
       btn.textContent = 'Sending...';
       btn.disabled = true;
 
-      const data = new FormData(form);
+      const data = new URLSearchParams(new FormData(form));
 
       try {
         await fetch(SCRIPT_URL, { method: 'POST', body: data, mode: 'no-cors' });
