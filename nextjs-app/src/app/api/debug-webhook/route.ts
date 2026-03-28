@@ -5,7 +5,10 @@ export async function GET() {
   const priceId = 'price_1TG3yl5pbKqpMaZK06dcKUtY';
 
   const hasServiceKey = !!process.env.SUPABASE_SERVICE_ROLE_KEY;
-  const keyPrefix = process.env.SUPABASE_SERVICE_ROLE_KEY?.slice(0, 20) ?? 'NOT SET';
+  const keyLength = process.env.SUPABASE_SERVICE_ROLE_KEY?.length ?? 0;
+  const keyStart = process.env.SUPABASE_SERVICE_ROLE_KEY?.slice(0, 10) ?? 'NOT SET';
+  const keyEnd = process.env.SUPABASE_SERVICE_ROLE_KEY?.slice(-10) ?? 'NOT SET';
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? 'NOT SET';
 
   const { data: tier, error: tierError } = await supabaseAdmin
     .from('membership_tiers')
@@ -19,7 +22,10 @@ export async function GET() {
 
   return NextResponse.json({
     hasServiceKey,
-    keyPrefix,
+    keyLength,
+    keyStart,
+    keyEnd,
+    supabaseUrl,
     priceId,
     tier,
     tierError,
