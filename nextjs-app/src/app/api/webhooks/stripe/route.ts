@@ -37,7 +37,10 @@ export async function POST(request: Request) {
       const userId = subscription.metadata.supabase_user_id;
 
       console.log('[webhook] userId:', userId, 'priceId:', priceId);
-      if (!userId || !priceId) break;
+      if (!userId || !priceId) {
+        console.error('[webhook] BREAK: missing userId or priceId', { userId, priceId });
+        break;
+      }
 
       // Find matching tier
       const { data: tier, error: tierError } = await supabaseAdmin
@@ -47,7 +50,10 @@ export async function POST(request: Request) {
         .single();
 
       console.log('[webhook] tier:', JSON.stringify(tier), 'tierError:', JSON.stringify(tierError));
-      if (!tier) break;
+      if (!tier) {
+        console.error('[webhook] BREAK: tier not found', { priceId, tierError });
+        break;
+      }
 
       const { error: upsertError } = await supabaseAdmin.from('subscriptions').upsert(
         {
