@@ -21,6 +21,17 @@
 .animate-fade-in-up-delay { animation: fade-in-up 1s ease-out 0.2s both; }
 .animate-fade-in-up-delay-2 { animation: fade-in-up 1s ease-out 0.4s both; }
 
+/* Scroll-triggered fade-in transition */
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Particle effect in hero */
 .particle {
   position: absolute;

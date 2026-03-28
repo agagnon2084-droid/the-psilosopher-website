@@ -36,22 +36,27 @@ if (particlesContainer) {
   }
 }
 
-// Intersection observer for scroll animations
-const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+// Scroll-triggered fade-in using CSS transitions (not animations)
+// Add a class to hide, then remove it on intersection to trigger the transition
+const heroSection = document.querySelector('section.min-h-screen');
+const scrollTargets = document.querySelectorAll('section > div');
+
+scrollTargets.forEach(el => {
+  if (heroSection && heroSection.contains(el)) return;
+  el.classList.add('scroll-hidden');
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '';
-      entry.target.classList.add('animate-fade-in-up');
+      entry.target.classList.remove('scroll-hidden');
+      entry.target.classList.add('scroll-visible');
       observer.unobserve(entry.target);
     }
   });
-}, observerOptions);
+}, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
 
-// Animate sections on scroll, but skip the hero section's children
-const heroSection = document.querySelector('section.min-h-screen');
-document.querySelectorAll('section > div').forEach(el => {
+scrollTargets.forEach(el => {
   if (heroSection && heroSection.contains(el)) return;
-  el.style.opacity = '0';
   observer.observe(el);
 });
