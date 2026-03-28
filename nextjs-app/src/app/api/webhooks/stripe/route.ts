@@ -46,10 +46,10 @@ export async function POST(request: Request) {
         .or(`stripe_price_id_monthly.eq.${priceId},stripe_price_id_yearly.eq.${priceId}`)
         .single();
 
-      console.log('[webhook] tier:', tier, 'tierError:', tierError);
+      console.log('[webhook] tier:', JSON.stringify(tier), 'tierError:', JSON.stringify(tierError));
       if (!tier) break;
 
-      await supabaseAdmin.from('subscriptions').upsert(
+      const { error: upsertError } = await supabaseAdmin.from('subscriptions').upsert(
         {
           user_id: userId,
           tier_id: tier.id,
@@ -62,6 +62,7 @@ export async function POST(request: Request) {
         },
         { onConflict: 'stripe_subscription_id' }
       );
+      console.log('[webhook] upsertError:', JSON.stringify(upsertError));
       break;
     }
 
