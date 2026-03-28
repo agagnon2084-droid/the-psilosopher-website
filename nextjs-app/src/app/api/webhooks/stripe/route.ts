@@ -68,7 +68,11 @@ export async function POST(request: Request) {
         },
         { onConflict: 'stripe_subscription_id' }
       );
-      console.log('[webhook] upsertError:', JSON.stringify(upsertError));
+      if (upsertError) {
+        console.error('[webhook] UPSERT FAILED:', JSON.stringify(upsertError));
+        throw new Error(`Upsert failed: ${upsertError.message}`);
+      }
+      console.log('[webhook] upsert SUCCESS for user:', userId);
       break;
     }
 
