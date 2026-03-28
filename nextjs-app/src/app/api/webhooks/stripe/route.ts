@@ -26,6 +26,7 @@ export async function POST(request: Request) {
   switch (event.type) {
     case 'checkout.session.completed': {
       const session = event.data.object;
+      console.log('[webhook] checkout.session.completed', { mode: session.mode, subscription: session.subscription });
       if (session.mode !== 'subscription' || !session.subscription) break;
 
       const subscription = await stripe.subscriptions.retrieve(
@@ -35,15 +36,17 @@ export async function POST(request: Request) {
       const priceId = item?.price.id;
       const userId = subscription.metadata.supabase_user_id;
 
+      console.log('[webhook] userId:', userId, 'priceId:', priceId);
       if (!userId || !priceId) break;
 
       // Find matching tier
-      const { data: tier } = await supabaseAdmin
+      const { data: tier, error: tierError } = await supabaseAdmin
         .from('membership_tiers')
         .select('id')
         .or(`stripe_price_id_monthly.eq.${priceId},stripe_price_id_yearly.eq.${priceId}`)
         .single();
 
+      console.log('[webhook] tier:', tier, 'tierError:', tierError);
       if (!tier) break;
 
       await supabaseAdmin.from('subscriptions').upsert(
