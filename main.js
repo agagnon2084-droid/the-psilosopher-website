@@ -47,12 +47,10 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
+// Animate sections on scroll, but skip the hero section's children
+const heroSection = document.querySelector('section.min-h-screen');
 document.querySelectorAll('section > div').forEach(el => {
+  if (heroSection && heroSection.contains(el)) return;
   el.style.opacity = '0';
   observer.observe(el);
-});
-
-// Don't hide hero content
-document.querySelectorAll('.relative.z-10').forEach(el => {
-  el.style.opacity = '1';
 });
