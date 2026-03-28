@@ -9,7 +9,7 @@
   <script>
     tailwind.config = {
       theme: {
-        extend: {
+        extend: 
           colors: {
             earth: { 50:'#fdf8f0', 100:'#f5ead4', 200:'#e8d5a8', 300:'#d4b978', 400:'#c4a455', 500:'#a8893d', 600:'#8a6e2f', 700:'#6b5424', 800:'#4d3c1a', 900:'#2f2510' },
             forest: { 50:'#f0f7f0', 100:'#d4e8d4', 200:'#a8d1a8', 300:'#6db56d', 400:'#4a9a4a', 500:'#2d7a2d', 600:'#1f5e1f', 700:'#184818', 800:'#123312', 900:'#0c200c' },
@@ -19,7 +19,23 @@
           fontFamily: {
             serif: ['"Playfair Display"', 'Georgia', 'serif'],
             sans: ['"Inter"', 'system-ui', 'sans-serif']
-          }
+          },
+                keyframes: {
+                                'fade-in': {
+                                                  from: { opacity: '0' },
+                                                  to: { opacity: '1' }
+                                },
+                                'fade-in-up': {
+                                                  from: { opacity: '0', transform: 'translateY(30px)' },
+                                                  to: { opacity: '1', transform: 'translateY(0)' }
+                                }
+                },
+                animation: {
+                                'fade-in': 'fade-in 1s ease-out both',
+                                                'fade-in-up': 'fade-in-up 1s ease-out both',
+                                                'fade-in-up-delay': 'fade-in-up 1s ease-out 0.2s both',
+                                                'fade-in-up-delay-2': 'fade-in-up 1s ease-out 0.4s both'
+                }
         }
       }
     }
