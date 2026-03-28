@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* ── Tailwind v4 Theme ────────────────────────────────────── */
+@theme {
+  /* Earth palette */
+  --color-earth-50:  #fdf8f0;
+  --color-earth-100: #f5ead4;
+  --color-earth-200: #e8d5a8;
+  --color-earth-300: #d4b978;
+  --color-earth-400: #c4a455;
+  --color-earth-500: #a8893d;
+  --color-earth-600: #8a6e2f;
+  --color-earth-700: #6b5424;
+  --color-earth-800: #4d3c1a;
+  --color-earth-900: #2f2510;
+
+  /* Forest palette */
+  --color-forest-50:  #f0f7f0;
+  --color-forest-100: #d4e8d4;
+  --color-forest-200: #a8d1a8;
+  --color-forest-300: #6db56d;
+  --color-forest-400: #4a9a4a;
+  --color-forest-500: #2d7a2d;
+  --color-forest-600: #1f5e1f;
+  --color-forest-700: #184818;
+  --color-forest-800: #123312;
+  --color-forest-900: #0c200c;
+
+  /* Mystic palette */
+  --color-mystic-50:  #f5f0fa;
+  --color-mystic-100: #e6d9f2;
+  --color-mystic-200: #c9a8e4;
+  --color-mystic-300: #a870d1;
+  --color-mystic-400: #8b4abf;
+  --color-mystic-500: #6e2da3;
+  --color-mystic-600: #571f85;
+  --color-mystic-700: #431868;
+  --color-mystic-800: #30114b;
+  --color-mystic-900: #1e0b30;
+
+  /* Gold palette */
+  --color-gold-50:  #fffdf0;
+  --color-gold-100: #fff8d4;
+  --color-gold-200: #ffeda8;
+  --color-gold-300: #ffe070;
+  --color-gold-400: #ffd43b;
+  --color-gold-500: #e6b800;
+  --color-gold-600: #b89300;
+  --color-gold-700: #8a6e00;
+  --color-gold-800: #5c4a00;
+  --color-gold-900: #2e2500;
+
+  /* Fonts */
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans:  var(--font-inter), system-ui, sans-serif;
+
+  /* Animations */
+  --animate-fade-in:            fade-in 1s ease-out both;
+  --animate-fade-in-up:         fade-in-up 1s ease-out both;
+  --animate-fade-in-up-delay:   fade-in-up 1s ease-out 0.2s both;
+  --animate-fade-in-up-delay-2: fade-in-up 1s ease-out 0.4s both;
+  --animate-float:              float linear infinite;
+  --animate-glow:               glow 3s ease-in-out infinite;
+}
+
+/* ── Keyframes ────────────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px)   rotate(0deg);   opacity: 0.6; }
+  50%       { transform: translateY(-20px) rotate(180deg); opacity: 1;   }
+}
+@keyframes glow {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 0.8; }
+}
+
+/* ── Scroll-triggered fade ────────────────────────────────── */
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Particle ─────────────────────────────────────────────── */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  animation: float linear infinite;
+}
+
+/* ── Nav scroll effect ────────────────────────────────────── */
+.nav-scrolled {
+  background: rgba(253, 248, 240, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.nav-scrolled .nav-link,
+.nav-scrolled a:first-child span {
+  color: #2f2510;
+}
+
+/* ── Smooth scrolling ─────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ── Selection color ──────────────────────────────────────── */
+::selection { background: rgba(110, 45, 163, 0.2); }
+
+/* ── Focus styles ─────────────────────────────────────────── */
+*:focus-visible {
+  outline: 2px solid #6e2da3;
+  outline-offset: 2px;
+}
+
+/* ── Article card image hover ─────────────────────────────── */
+.article-card img { transition: transform 0.5s ease; }
+.article-card:hover img { transform: scale(1.05); }
+
+/* ── Gradient text fallback ───────────────────────────────── */
+@supports not (background-clip: text) {
+  .text-transparent { color: #c9a8e4; }
+}
+
+/* ── Print styles ─────────────────────────────────────────── */
+@media print {
+  nav, footer, .particles { display: none; }
+  body { background: white; }
+}
