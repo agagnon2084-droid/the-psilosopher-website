@@ -9,7 +9,7 @@ var NOTIFY_EMAIL   = 'hello@thepsilosopher.com';
 // 2. Right-click it → "Get link" → copy the ID from the URL
 //    e.g. https://drive.google.com/file/d/PASTE_THIS_PART/view
 // 3. Replace the value below and re-deploy this script
-var WORKBOOK_PDF_ID = 'PASTE_YOUR_DRIVE_FILE_ID_HERE';
+var WORKBOOK_PDF_ID = '1PTOJci8m8qyxBlcKu6iSP-yWcw-Mf6I2p1taXoYRWPw';
 
 function doPost(e) {
   try {
