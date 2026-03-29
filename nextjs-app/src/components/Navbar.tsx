@@ -77,6 +77,7 @@ export default function Navbar() {
           <Link href="/about" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">About</Link>
           <Link href="/blog" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Blog</Link>
           <Link href="/resources" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Resources</Link>
+          <Link href="/pricing" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Membership</Link>
 
           {user ? (
             <div className="relative" ref={dropdownRef}>
@@ -128,6 +129,7 @@ export default function Navbar() {
             <Link href="/about" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>About</Link>
             <Link href="/blog" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Blog</Link>
             <Link href="/resources" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Resources</Link>
+            <Link href="/pricing" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Membership</Link>
             <Link href="/contact" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Contact</Link>
 
             {user ? (

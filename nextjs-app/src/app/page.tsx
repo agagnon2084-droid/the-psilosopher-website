@@ -52,6 +52,12 @@ export default function HomePage() {
             >
               My Story
             </Link>
+            <Link
+              href="/pricing"
+              className="px-8 py-4 border-2 border-gold-400/50 text-gold-400 rounded-full font-medium hover:bg-gold-400/10 transition-all"
+            >
+              Membership
+            </Link>
           </div>
         </div>
 
