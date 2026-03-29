@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { User } from '@supabase/supabase-js';
@@ -65,9 +66,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-mystic-500 to-forest-600 flex items-center justify-center">
-            <span className="text-white font-serif font-bold text-lg">P</span>
-          </div>
+          <Image src="/images/logo.png" alt="The Psilosopher logo" width={44} height={44} />
           <span className="font-serif font-bold text-xl tracking-tight">The Psilosopher</span>
         </Link>
 

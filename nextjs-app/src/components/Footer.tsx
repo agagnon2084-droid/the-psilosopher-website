@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -7,9 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-mystic-500 to-forest-600 flex items-center justify-center">
-                <span className="text-white font-serif font-bold text-lg">P</span>
-              </div>
+              <Image src="/images/logo.png" alt="The Psilosopher logo" width={44} height={44} />
               <span className="font-serif font-bold text-xl text-white">The Psilosopher</span>
             </div>
             <p className="text-sm leading-relaxed text-earth-400">Honest, grounded psychedelic education and integration support.</p>
