@@ -65,6 +65,7 @@ export interface Lesson {
   title: string;
   slug: string;
   description: string | null;
+  content: string | null;
   mux_playback_id: string | null;
   mux_asset_id: string | null;
   duration_seconds: number | null;

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import type { User } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/client';
+import { ADMIN_EMAILS } from '@/lib/admin';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -75,6 +76,7 @@ export default function Navbar() {
           <Link href="/" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Home</Link>
           <Link href="/about" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">About</Link>
           <Link href="/blog" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Blog</Link>
+          <Link href="/courses" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Courses</Link>
           <Link href="/resources" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Resources</Link>
           <Link href="/pricing" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Membership</Link>
 
@@ -90,6 +92,23 @@ export default function Navbar() {
               {dropdownOpen && (
                 <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-earth-100 py-2 z-50">
                   <p className="px-4 py-2 text-xs text-earth-400 truncate">{user.email}</p>
+                  <div className="border-t border-earth-100 my-1" />
+                  <Link
+                    href="/dashboard"
+                    onClick={() => setDropdownOpen(false)}
+                    className="block px-4 py-2 text-sm text-earth-700 hover:bg-earth-50 transition-colors"
+                  >
+                    Dashboard
+                  </Link>
+                  {ADMIN_EMAILS.includes(user.email ?? '') && (
+                    <Link
+                      href="/admin"
+                      onClick={() => setDropdownOpen(false)}
+                      className="block px-4 py-2 text-sm text-earth-700 hover:bg-earth-50 transition-colors"
+                    >
+                      Admin
+                    </Link>
+                  )}
                   <div className="border-t border-earth-100 my-1" />
                   <button
                     onClick={handleSignOut}
@@ -127,6 +146,7 @@ export default function Navbar() {
             <Link href="/" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Home</Link>
             <Link href="/about" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>About</Link>
             <Link href="/blog" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Blog</Link>
+            <Link href="/courses" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Courses</Link>
             <Link href="/resources" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Resources</Link>
             <Link href="/pricing" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Membership</Link>
             <Link href="/contact" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Contact</Link>
