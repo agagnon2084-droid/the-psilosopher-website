@@ -8,6 +8,7 @@ import VideoPlayer from '@/components/VideoPlayer';
 import MarkCompleteButton from '@/components/MarkCompleteButton';
 import LessonSidebar from '@/components/LessonSidebar';
 import LessonSlides from '@/components/LessonSlides';
+import LessonDiscussion from '@/components/community/LessonDiscussion';
 
 export async function generateMetadata({
   params,
@@ -121,6 +122,9 @@ export default async function LessonPage({
           ) : currentLesson.description ? (
             <p className="text-earth-600 mb-10 leading-relaxed">{currentLesson.description}</p>
           ) : null}
+
+          {/* Discussion */}
+          <LessonDiscussion lessonId={currentLesson.id} lessonTitle={currentLesson.title} />
 
           {/* Actions */}
           <div className="flex items-center justify-between flex-wrap gap-4 pt-6 border-t border-earth-100">

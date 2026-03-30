@@ -78,6 +78,7 @@ export default function Navbar() {
           <Link href="/blog" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Blog</Link>
           <Link href="/courses" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Courses</Link>
           <Link href="/resources" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Resources</Link>
+          <Link href="/community" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Community</Link>
           <Link href="/pricing" className="nav-link text-sm font-medium hover:text-mystic-600 transition-colors">Membership</Link>
 
           {user ? (
@@ -148,6 +149,7 @@ export default function Navbar() {
             <Link href="/blog" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Blog</Link>
             <Link href="/courses" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Courses</Link>
             <Link href="/resources" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Resources</Link>
+            <Link href="/community" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Community</Link>
             <Link href="/pricing" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Membership</Link>
             <Link href="/contact" className="text-sm font-medium hover:text-mystic-600" onClick={() => setMenuOpen(false)}>Contact</Link>
 

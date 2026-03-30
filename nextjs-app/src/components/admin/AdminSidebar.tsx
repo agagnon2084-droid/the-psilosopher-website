@@ -9,6 +9,7 @@ const navItems = [
   { href: '/admin', label: 'Overview', icon: '◈' },
   { href: '/admin/courses', label: 'Courses', icon: '◎' },
   { href: '/admin/workbooks', label: 'Workbooks', icon: '◇' },
+  { href: '/admin/community', label: 'Community', icon: '◆' },
   { href: '/admin/users', label: 'Users', icon: '◉' },
 ];
 

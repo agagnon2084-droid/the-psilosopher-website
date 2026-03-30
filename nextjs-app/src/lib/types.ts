@@ -105,6 +105,8 @@ export interface CommunityPost {
   body: string;
   category: string | null;
   is_pinned: boolean;
+  is_locked: boolean;
+  lesson_id: string | null;
   created_at: string;
   updated_at: string;
 }
@@ -115,4 +117,25 @@ export interface CommunityComment {
   user_id: string;
   body: string;
   created_at: string;
+}
+
+export interface CommunityLike {
+  id: string;
+  user_id: string;
+  post_id: string | null;
+  comment_id: string | null;
+  created_at: string;
+}
+
+export interface CommunityPostWithMeta extends CommunityPost {
+  profile: Pick<Profile, 'display_name' | 'avatar_url'>;
+  comment_count: number;
+  like_count: number;
+  user_has_liked: boolean;
+}
+
+export interface CommunityCommentWithMeta extends CommunityComment {
+  profile: Pick<Profile, 'display_name' | 'avatar_url'>;
+  like_count: number;
+  user_has_liked: boolean;
 }

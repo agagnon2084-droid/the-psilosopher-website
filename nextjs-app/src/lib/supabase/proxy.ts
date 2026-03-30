@@ -44,6 +44,7 @@ export async function updateSession(request: NextRequest) {
     pathname.startsWith('/dashboard') ||
     pathname.startsWith('/members') ||
     pathname.startsWith('/admin') ||
+    pathname.startsWith('/community') ||
     (pathname.startsWith('/courses') && isLessonPage(pathname))
 
   if (!user && needsAuth) {
