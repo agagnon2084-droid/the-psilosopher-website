@@ -113,7 +113,7 @@ export default async function LessonPage({
       <div className="max-w-7xl mx-auto px-6 flex gap-8">
         {/* Main content */}
         <div className="flex-1 min-w-0">
-          <VideoPlayer playbackId={currentLesson.mux_playback_id} />
+          <VideoPlayer youtubeUrl={currentLesson.youtube_url} />
 
           <h1 className="font-serif text-3xl font-bold text-earth-900 mb-6">{currentLesson.title}</h1>
 
