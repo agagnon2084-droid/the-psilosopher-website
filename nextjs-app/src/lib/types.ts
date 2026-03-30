@@ -11,7 +11,7 @@ export type SubscriptionStatus =
 export interface Profile {
   id: string;
   display_name: string | null;
-  avatar_url: string | null;
+  avatar_url: string | null
   created_at: string;
   updated_at: string;
 }
@@ -66,8 +66,7 @@ export interface Lesson {
   slug: string;
   description: string | null;
   content: string | null;
-  mux_playback_id: string | null;
-  mux_asset_id: string | null;
+  youtube_url: string | null;
   duration_seconds: number | null;
   sort_order: number;
   is_published: boolean;
