@@ -63,7 +63,7 @@ function formatParagraphs(text: string) {
       return (
         <ul key={i} className="space-y-2 my-4 ml-1">
           {items.map((item, j) => (
-            <li key={j} className="flex gap-3 text-earth-700 leading-relaxed">
+            <li key={j} className="flex gap-3 text-earth-600 leading-relaxed text-[0.95rem]">
               <span className="text-mystic-500 mt-1 flex-shrink-0">&#x2022;</span>
               <span>{item.replace(/^[\u2022\-\*]\s*/, '')}</span>
             </li>
@@ -77,7 +77,7 @@ function formatParagraphs(text: string) {
       return (
         <ol key={i} className="space-y-2 my-4 ml-1">
           {items.map((item, j) => (
-            <li key={j} className="flex gap-3 text-earth-700 leading-relaxed">
+            <li key={j} className="flex gap-3 text-earth-600 leading-relaxed text-[0.95rem]">
               <span className="text-mystic-600 font-semibold mt-0.5 flex-shrink-0 w-6 text-right">{j + 1}.</span>
               <span>{item.replace(/^\d+[\.\)]\s*/, '')}</span>
             </li>
@@ -86,9 +86,42 @@ function formatParagraphs(text: string) {
       );
     }
 
-    // Check for bold-style emphasis (words in ALL CAPS or quoted)
+    // Short standalone line (no period at end, under 80 chars) = subheading
+    const lines = trimmed.split('\n');
+    const isSingleLine = lines.length === 1;
+    const isHeading =
+      isSingleLine &&
+      trimmed.length < 80 &&
+      !trimmed.endsWith('.') &&
+      !trimmed.endsWith('?') &&
+      !trimmed.endsWith('!') &&
+      !trimmed.endsWith(':') &&
+      !trimmed.startsWith('(') &&
+      !/^(And |But |Or |So |The |A |If |It |This |That |When |What |How |Why |Read |Maybe )/.test(trimmed);
+
+    if (isHeading) {
+      return (
+        <h3 key={i} className="font-serif text-lg font-bold text-earth-900 mt-8 mb-3">
+          {trimmed}
+        </h3>
+      );
+    }
+
+    // Emphasis line — short, punchy sentence (under 60 chars, often imperative)
+    const isEmphasis = isSingleLine && trimmed.length < 60 && /^[A-Z]/.test(trimmed) && (
+      trimmed.split('. ').length >= 2 || /^Read that/.test(trimmed)
+    );
+
+    if (isEmphasis) {
+      return (
+        <p key={i} className="text-mystic-700 font-semibold italic leading-relaxed my-4 pl-4 border-l-2 border-mystic-300">
+          {trimmed}
+        </p>
+      );
+    }
+
     return (
-      <p key={i} className="text-earth-700 leading-relaxed my-3">
+      <p key={i} className="text-earth-600 leading-relaxed my-3 text-[0.95rem]">
         {trimmed}
       </p>
     );
