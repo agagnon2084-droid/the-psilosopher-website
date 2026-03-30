@@ -48,7 +48,7 @@ export default function PricingToggle({ tiers }: { tiers: MembershipTier[] }) {
             }`}
           >
             Yearly
-            <span className="ml-2 text-xs text-forest-600 font-semibold">Save 17%</span>
+            <span className="ml-2 text-xs text-forest-600 font-semibold">Save ~34%</span>
           </button>
         </div>
       </div>
@@ -105,13 +105,16 @@ export default function PricingToggle({ tiers }: { tiers: MembershipTier[] }) {
                   Get Started
                 </Link>
               ) : (
-                <button
-                  onClick={() => priceId && handleCheckout(priceId)}
-                  disabled={!priceId || loadingTier === priceId}
-                  className="w-full py-3 bg-gradient-to-r from-mystic-600 to-mystic-500 text-white rounded-xl font-medium text-sm hover:from-mystic-700 hover:to-mystic-600 transition-all shadow-lg shadow-mystic-500/20 disabled:opacity-60"
-                >
-                  {loadingTier === priceId ? 'Processing...' : 'Subscribe'}
-                </button>
+                <>
+                  <button
+                    onClick={() => priceId && handleCheckout(priceId)}
+                    disabled={!priceId || loadingTier === priceId}
+                    className="w-full py-3 bg-gradient-to-r from-mystic-600 to-mystic-500 text-white rounded-xl font-medium text-sm hover:from-mystic-700 hover:to-mystic-600 transition-all shadow-lg shadow-mystic-500/20 disabled:opacity-60"
+                  >
+                    {loadingTier === priceId ? 'Processing...' : 'Start 7-Day Free Trial'}
+                  </button>
+                  <p className="text-center text-xs text-earth-400 mt-2">No credit card required · Cancel anytime</p>
+                </>
               )}
             </div>
           );

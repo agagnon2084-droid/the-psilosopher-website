@@ -350,9 +350,9 @@ insert into public.membership_tiers (name, slug, description, price_monthly, pri
 values
   ('Free', 'free', 'Access to blog and newsletter', 0, 0,
    '["Blog access", "Weekly newsletter"]'::jsonb, 0),
-  ('Essentials', 'essentials', 'Core integration tools and workbooks', 999, 9900,
+  ('Essentials', 'essentials', 'Core integration tools and workbooks', 999, 7900,
    '["Everything in Free", "Downloadable workbooks", "Integration tools"]'::jsonb, 1),
-  ('Premium', 'premium', 'Full video course library and community', 2499, 24900,
+  ('Premium', 'premium', 'Full video course library and community', 2499, 19900,
    '["Everything in Essentials", "Video course library", "Community forum access"]'::jsonb, 2),
-  ('Pro', 'pro', 'Complete access plus live sessions', 4999, 49900,
+  ('Pro', 'pro', 'Complete access plus live sessions', 4999, 39900,
    '["Everything in Premium", "Live group sessions", "Priority support"]'::jsonb, 3);

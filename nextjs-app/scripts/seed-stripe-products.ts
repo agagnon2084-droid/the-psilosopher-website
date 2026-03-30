@@ -5,9 +5,9 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 });
 
 const tiers = [
-  { name: 'Essentials', slug: 'essentials', monthlyPrice: 999, yearlyPrice: 9900 },
-  { name: 'Premium', slug: 'premium', monthlyPrice: 2499, yearlyPrice: 24900 },
-  { name: 'Pro', slug: 'pro', monthlyPrice: 4999, yearlyPrice: 49900 },
+  { name: 'Essentials', slug: 'essentials', monthlyPrice: 999, yearlyPrice: 7900 },
+  { name: 'Premium', slug: 'premium', monthlyPrice: 2499, yearlyPrice: 19900 },
+  { name: 'Pro', slug: 'pro', monthlyPrice: 4999, yearlyPrice: 39900 },
 ];
 
 async function main() {
