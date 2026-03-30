@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { getUserTierLevel } from '@/lib/access';
 
 export async function GET(
   request: Request,
@@ -9,6 +10,8 @@ export async function GET(
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const tier = await getUserTierLevel(user.id);
+  if (tier < 1) return NextResponse.json({ error: 'Essentials+ required' }, { status: 403 });
 
   const { data: comments, error } = await supabase
     .from('community_comments')
@@ -49,6 +52,8 @@ export async function POST(
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const tier = await getUserTierLevel(user.id);
+  if (tier < 1) return NextResponse.json({ error: 'Essentials+ required' }, { status: 403 });
 
   // Check if post is locked
   const { data: post } = await supabase

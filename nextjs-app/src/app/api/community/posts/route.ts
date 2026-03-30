@@ -1,10 +1,19 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { getUserTierLevel } from '@/lib/access';
+
+async function requireEssentials(supabase: Awaited<ReturnType<typeof createClient>>) {
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { user: null, error: NextResponse.json({ error: 'Unauthorized' }, { status: 401 }) };
+  const tier = await getUserTierLevel(user.id);
+  if (tier < 1) return { user: null, error: NextResponse.json({ error: 'Essentials+ subscription required' }, { status: 403 }) };
+  return { user, error: null };
+}
 
 export async function GET(request: Request) {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const { user, error: authError } = await requireEssentials(supabase);
+  if (authError) return authError;
 
   const { searchParams } = new URL(request.url);
   const category = searchParams.get('category');
@@ -63,8 +72,8 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  const { user, error: authError } = await requireEssentials(supabase);
+  if (authError) return authError;
 
   const body = await request.json();
   const { title, body: postBody, category, lesson_id } = body;

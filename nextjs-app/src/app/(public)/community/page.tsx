@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
+import { getUserTierLevel } from '@/lib/access';
 import type { CommunityPostWithMeta } from '@/lib/types';
 import CategoryFilter from '@/components/community/CategoryFilter';
 import PostList from '@/components/community/PostList';
@@ -18,6 +20,10 @@ export default async function CommunityPage({
   const params = await searchParams;
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect('/login');
+
+  const tierLevel = await getUserTierLevel(user.id);
+  if (tierLevel < 1) redirect('/pricing?reason=community');
 
   let query = supabase
     .from('community_posts')

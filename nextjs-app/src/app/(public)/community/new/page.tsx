@@ -1,13 +1,22 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Suspense } from 'react';
+import { redirect } from 'next/navigation';
+import { createClient } from '@/lib/supabase/server';
+import { getUserTierLevel } from '@/lib/access';
 import NewPostForm from '@/components/community/NewPostForm';
 
 export const metadata: Metadata = {
   title: 'New Discussion | Community | The Psilosopher',
 };
 
-export default function NewPostPage() {
+export default async function NewPostPage() {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect('/login');
+
+  const tierLevel = await getUserTierLevel(user.id);
+  if (tierLevel < 1) redirect('/pricing?reason=community');
   return (
     <div className="pt-24 pb-16">
       <div className="max-w-2xl mx-auto px-6">

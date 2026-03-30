@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
+import { getUserTierLevel } from '@/lib/access';
 import { isAdmin } from '@/lib/admin';
 import type { CommunityPostWithMeta, CommunityCommentWithMeta } from '@/lib/types';
 import PostDetail from '@/components/community/PostDetail';
@@ -33,7 +34,10 @@ export default async function CommunityPostPage({
   const { postId } = await params;
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
-  if (!user) notFound();
+  if (!user) redirect('/login');
+
+  const tierLevel = await getUserTierLevel(user.id);
+  if (tierLevel < 1) redirect('/pricing?reason=community');
 
   // Fetch post
   const { data: rawPost } = await supabase
