@@ -86,7 +86,7 @@ function formatParagraphs(text: string) {
       );
     }
 
-    // Short standalone line (no period at end, under 80 chars) = subheading
+    // Short standalone line (no sentence-ending punctuation, under 80 chars) = subheading
     const lines = trimmed.split('\n');
     const isSingleLine = lines.length === 1;
     const isHeading =
@@ -95,9 +95,11 @@ function formatParagraphs(text: string) {
       !trimmed.endsWith('.') &&
       !trimmed.endsWith('?') &&
       !trimmed.endsWith('!') &&
-      !trimmed.endsWith(':') &&
       !trimmed.startsWith('(') &&
-      !/^(And |But |Or |So |The |A |If |It |This |That |When |What |How |Why |Read |Maybe )/.test(trimmed);
+      // Exclude sentences that happen to be short
+      !(trimmed.includes(',') && trimmed.split(' ').length > 10) &&
+      // Exclude intro sentences ending with colon that read as full sentences
+      !(trimmed.endsWith(':') && trimmed.split(' ').length > 6);
 
     if (isHeading) {
       return (
