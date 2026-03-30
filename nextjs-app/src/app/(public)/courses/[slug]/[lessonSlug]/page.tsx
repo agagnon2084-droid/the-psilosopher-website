@@ -7,6 +7,7 @@ import type { Lesson } from '@/lib/types';
 import VideoPlayer from '@/components/VideoPlayer';
 import MarkCompleteButton from '@/components/MarkCompleteButton';
 import LessonSidebar from '@/components/LessonSidebar';
+import LessonSlides from '@/components/LessonSlides';
 
 export async function generateMetadata({
   params,
@@ -116,11 +117,7 @@ export default async function LessonPage({
           <h1 className="font-serif text-3xl font-bold text-earth-900 mb-6">{currentLesson.title}</h1>
 
           {currentLesson.content ? (
-            <div className="prose prose-earth max-w-none mb-10">
-              <div className="whitespace-pre-wrap text-earth-700 leading-relaxed">
-                {currentLesson.content}
-              </div>
-            </div>
+            <LessonSlides content={currentLesson.content} />
           ) : currentLesson.description ? (
             <p className="text-earth-600 mb-10 leading-relaxed">{currentLesson.description}</p>
           ) : null}
