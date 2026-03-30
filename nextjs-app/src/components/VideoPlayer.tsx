@@ -1,20 +1,39 @@
-/**
- * Video player placeholder. When Mux integration is ready,
- * install @mux/mux-player-react and render <MuxPlayer> here.
- */
-export default function VideoPlayer({ playbackId }: { playbackId: string | null }) {
-  if (!playbackId) return null;
+'use client';
 
-  return (
-    <div className="aspect-video bg-earth-900 rounded-xl flex items-center justify-center mb-8">
-      <div className="text-center">
-        <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-earth-800 flex items-center justify-center">
-          <svg className="w-8 h-8 text-earth-400" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </div>
-        <p className="text-earth-400 text-sm">Video content coming soon</p>
-      </div>
-    </div>
-  );
+/** Extracts a YouTube video ID from any standard YouTube URL format */
+function getYouTubeId(url: string): string | null {
+    const patterns = [
+          /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
+        ];
+    for (const pattern of patterns) {
+          const match = url.match(pattern);
+          if (match) return match[1];
+    }
+    return null;
 }
+
+export default function VideoPlayer({ youtubeUrl }: { youtubeUrl: string | null }) {
+    if (!youtubeUrl) return null;
+
+  const videoId = getYouTubeId(youtubeUrl);
+
+  if (!videoId) {
+        return (
+                <div className="aspect-video bg-earth-900 rounded-xl flex items-center justify-center mb-8">
+                        <p className="text-earth-400 text-sm">Invalid YouTube URL</p>p>
+                </div>div>
+              );
+  }
+  
+    return (
+          <div className="aspect-video rounded-xl overflow-hidden mb-8 shadow-lg">
+                <iframe
+                          src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}
+                          title="Lesson video"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="w-full h-full"
+                        />
+          </div>div>
+        );
+}</div>
