@@ -21,7 +21,7 @@ export default function LessonForm({
   const [slug, setSlug] = useState(lesson?.slug ?? '');
   const [description, setDescription] = useState(lesson?.description ?? '');
   const [content, setContent] = useState(lesson?.content ?? '');
-  const [muxPlaybackId, setMuxPlaybackId] = useState(lesson?.mux_playback_id ?? '');
+  const [youtubeUrl, setYoutubeUrl] = useState(lesson?.youtube_url ?? '');
   const [durationSeconds, setDurationSeconds] = useState(lesson?.duration_seconds ?? 0);
   const [sortOrder, setSortOrder] = useState(lesson?.sort_order ?? 0);
   const [isPublished, setIsPublished] = useState(lesson?.is_published ?? false);
@@ -37,8 +37,7 @@ export default function LessonForm({
       slug,
       description: description || null,
       content: content || null,
-      mux_playback_id: muxPlaybackId || null,
-      mux_asset_id: null,
+      youtube_url: youtubeUrl || null,
       duration_seconds: durationSeconds || null,
       sort_order: sortOrder,
       is_published: isPublished,
@@ -112,13 +111,13 @@ export default function LessonForm({
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-earth-700 mb-1">Mux Playback ID (optional)</label>
+        <label className="block text-sm font-medium text-earth-700 mb-1">YouTube URL (optional)</label>
         <input
-          type="text"
-          value={muxPlaybackId}
-          onChange={(e) => setMuxPlaybackId(e.target.value)}
-          className="w-full px-4 py-2.5 border border-earth-200 rounded-lg focus:ring-2 focus:ring-mystic-200 focus:border-mystic-400 outline-none transition-all font-mono text-sm"
-          placeholder="Leave blank until Mux is set up"
+          type="url"
+          value={youtubeUrl}
+          onChange={(e) => setYoutubeUrl(e.target.value)}
+          className="w-full px-4 py-2.5 border border-earth-200 rounded-lg focus:ring-2 focus:ring-mystic-200 focus:border-mystic-400 outline-none transition-all"
+          placeholder="https://www.youtube.com/watch?v=..."
         />
       </div>
 
