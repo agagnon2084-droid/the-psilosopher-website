@@ -1,5 +1,6 @@
 'use client';
 
+/** Extracts a YouTube video ID from any standard YouTube URL format */
 function getYouTubeId(url: string): string | null {
   const patterns = [
     /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,

@@ -1,5 +1,7 @@
 -- ============================================================
--- Migration 00005: Replace Mux video with YouTube URL
+-- Replace Mux video fields with YouTube URL on lessons table
+-- Swaps mux_playback_id and mux_asset_id for a simple youtube_url
+-- text column that accepts any standard YouTube URL format.
 -- ============================================================
 
 ALTER TABLE public.lessons

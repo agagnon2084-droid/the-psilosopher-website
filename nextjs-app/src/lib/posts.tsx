@@ -212,75 +212,79 @@ export const posts: Post[] = [
     content: () => (
       <>
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`There's a reason the same compound can produce, in one person, the most meaningful experience of their life, and in another, six hours of white-knuckle terror. The molecule is identical. The difference is everything else.`}
+          {`There's a reason the same compound can produce, in one person, the most meaningful experience of their life, and in another, six hours of white-knuckle terror. The molecule is identical. The dose is identical. The difference is everything else.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`That "everything else" has a name. Timothy Leary gave it to us in 1964, though the concept is far older than he is. Set and setting. Two words that now appear in every clinical trial protocol, every harm reduction guide, and every honest conversation about how psychedelics actually work.`}
+          {`Timothy Leary called it "set and setting" in the early 1960s, and for all the legitimate criticism you can level at Leary (and there's plenty) he got this one right. Maybe it's the single most important idea in the entire psychedelic lexicon, and it's deceptively simple: what you bring to the experience (your mindset) and where you have it (your environment) matter as much as, and often more than, the substance itself.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`This article is a thorough look at what the research actually says about each variable \u2014 and why understanding them matters whether you're a clinician designing a therapeutic protocol, a participant preparing for a session, or someone trying to make sense of an experience that has already happened.`}
-        </p>
-
-        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Where the Terms Come From
-        </h2>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Leary, Metzner, and Alpert introduced the phrase in <em>The Psychedelic Experience</em> (1964), their adaptation of the Tibetan Book of the Dead as a guide for LSD journeys. {`"Set" referred to the mindset brought to the session \u2014 expectations, intentions, emotional state, personality. "Setting" referred to the physical and social environment in which the session occurred.`}
-        </p>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`But the underlying principle had roots in indigenous ceremonial practice long before Leary named it. Mazatec healers in Oaxaca, curanderos across the Amazon basin, and countless other traditions understood, without using these words, that the context of an encounter with sacred plants was inseparable from the encounter itself. The space was prepared. The guide was present. The occasion was deliberate. None of this was decoration. It was architecture \u2014 a container built to shape what happened inside it.`}
-        </p>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          What Leary did was translate a very old wisdom into language a Western scientific audience might take seriously. Fifty years later, that translation has paid off. Clinical researchers now treat set and setting not as soft variables but as core determinants of outcome {`\u2014 as fundamental to the pharmacology as the dose itself.`}
+          {`This isn't mysticism. It's research.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Set: What You Bring to the Door
+          Where the Concept Comes From
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`"Mindset" is sometimes used loosely to mean attitude or mood. In the psychedelic research context, it means something more specific. Set encompasses a person's baseline psychological state, their personality traits, their intentions for the session, their expectations about what will happen, and the unresolved emotional material they are carrying \u2014 consciously or not.`}
+          {`Leary formalized the language in The Psychedelic Experience in 1964, drawing on Tibetan Buddhist frameworks to argue that the trajectory of a psychedelic trip is shaped by psychological preparation and environmental context. But the idea itself is far older than Leary, and it's worth acknowledging that.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`A landmark 2018 study by Haijen and colleagues at Maastricht University examined predictors of acute psilocybin response in a naturalistic setting and found that pre-session emotional state was among the strongest predictors of both positive and challenging experiences. Participants who entered with higher levels of anxiety, rumination, or psychological distress were significantly more likely to have difficult sessions. This was not surprising. But the study also found something more nuanced: the relationship between set and outcome was not simply "anxious in, bad trip out." Certain kinds of pre-session distress \u2014 particularly the anticipatory kind, the fear of losing control \u2014 were associated with profound experiences when properly supported. The difficulty was generative, not simply aversive.`}
+          {`Indigenous cultures that have worked with psychoactive plants for centuries the Mazatec with psilocybin mushrooms, Amazonian traditions with ayahuasca, the Native American Church with peyote, built elaborate ceremonial structures around these substances long before any Harvard psychologist showed up. The rituals, the songs, the fasting, the specific physical arrangements: these aren't decorative. They are, in modern terms, set and setting technologies. They're protocols designed to shape the experience toward healing rather than chaos.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`This is the paradox at the heart of set. Intention matters enormously. People who enter with clear, personally meaningful intentions tend to have more coherent and therapeutically useful experiences. A 2008 safety and ethics framework published by Johnson, Richards, and Griffiths at Johns Hopkins \u2014 which has since become the de facto standard for clinical psilocybin research \u2014 explicitly recommends that participants spend time before their session clarifying their intentions, not as a ritual but as a practical preparation for navigating what may come.`}
-        </p>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Personality also plays a role. Research consistently finds that trait openness to experience \u2014 one of the Big Five personality dimensions \u2014 predicts more positive outcomes from psychedelic sessions. This makes intuitive sense. A person who is constitutionally open to new experience, who can sit with uncertainty and ambiguity, will likely find the dissolution of normal cognitive structures less threatening than someone who relies heavily on predictability and control. Neither is better as a person; they simply enter the same compound from very different psychological positions.`}
+          What Leary did was take an idea that indigenous people had operationalized for generations and give it a name that Western psychology could work with. Whether that constitutes insight or appropriation probably depends on who you ask.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Setting: The Container
+          Set: What You Bring
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`If set is what you bring, setting is what surrounds you. It includes the physical environment \u2014 light levels, temperature, whether you can see the sky, whether the room feels safe \u2014 and the social environment: who is present, what role they play, what the relational dynamic is between participant and guide.`}
+          {`"Set" refers to mindset: your psychological state going into the experience. It includes your mood, your intentions, your expectations, your mental health history, your unresolved emotional material, and the degree to which you've actually prepared versus just decided to wing it.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Clinical research has been particularly attentive to the role of music. Bill Richards at Johns Hopkins and Mendel Kaelen at Imperial College London have each spent years studying how music functions during psilocybin sessions, and their conclusions are striking. Music is not background. In Kaelen's 2018 study in `}<em>Psychopharmacology</em>{`, music emerged as one of the most significant predictors of therapeutic outcome \u2014 more predictive, in some analyses, than the dose administered. The researchers described music as functioning like "a hidden therapist," structuring the emotional arc of the experience, providing a scaffold when internal narrative dissolves, and guiding the traveler toward emotionally meaningful material rather than away from it.`}
+          {`The clinical research programs take this seriously. At Johns Hopkins, the psilocybin protocols developed under Roland Griffiths and now continued by Matthew Johnson involve multiple preparatory sessions before participants ever take the compound. These aren't casual check-ins. Participants spend hours with their facilitators building rapport, discussing their life history, articulating their intentions, and working through anxiety about the upcoming experience. The facilitators aren't there to guide the trip; they're there to build a therapeutic alliance strong enough that the participant feels safe surrendering to whatever arises.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The Johns Hopkins protocol uses a carefully curated playlist \u2014 predominantly classical and ambient, emotionally evocative but instrumentally non-verbal \u2014 that has been refined over decades of clinical use. The reasoning is not aesthetic preference. It reflects an understanding that during ego dissolution, the mind reaches for structure. Music provides that structure without imposing content. A voice, a lyric, a recognizable cultural reference can redirect attention in ways that interrupt rather than deepen the therapeutic process. Instrumental music holds space without filling it.`}
+          {`MAPS took a similar approach with their MDMA-assisted therapy for PTSD. Their Phase 3 protocols included three preparatory sessions before each dosing session. The preparation isn't incidental to the treatment. It is the treatment, or at least a critical component of it. The therapists at MAPS describe their role as creating a container: establishing enough psychological safety that the participant can approach their trauma without being overwhelmed by it.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Physical environment matters in related ways. The clinical rooms used in psilocybin research at Johns Hopkins, NYU, and Imperial College are carefully designed: comfortable couches rather than clinical tables, soft lighting, plants, meaningful art, objects participants can hold. This is not interior design for comfort. It is an acknowledgment that during altered states, sensory input is processed differently and more intensely. A sterile environment signals danger. A warm one signals safety. That signal travels deep.
+          {`There's a meaningful body of data supporting this. A 2018 analysis by Haijen et al. published in Journal of Psychopharmacology found that psychological variables measured before a psychedelic experience, particularly absorption (the tendency toward immersive experience) and intention clarity, predicted both the quality of the acute experience and the lasting psychological outcomes. People who went in with clear, articulated intentions had better experiences and more durable benefits. This held even after controlling for dose and substance type.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Guide presence may be the most powerful element of all. The MAPS MDMA trials and the Johns Hopkins psilocybin studies use two-therapist teams who spend hours with participants before and after sessions. Their role during the session itself is largely silent \u2014 present, available, grounding \u2014 but that presence is not passive. A 2017 study by Watts and colleagues found that participants consistently cited the therapeutic relationship as a central determinant of their experience. They were not alone in the dark. That fact changed everything.`}
+          {`This doesn't mean you can think your way into a good trip. It means that the psychological substrate you bring, your readiness, your openness, your honesty about what you're actually dealing with, creates the conditions in which the compound operates. The molecule doesn't arrive in a vacuum. It arrives in you, with all your accumulated history and emotional architecture.`}
+        </p>
+
+        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
+          Setting: Where You Are
+        </h2>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`"Setting" is the physical, social, and sensory environment in which the experience takes place. And if set is what you bring, setting is what meets you.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The Johns Hopkins psilocybin research suite is deliberately designed to look nothing like a hospital. It's a living room: a couch, soft lighting, curated art on the walls, a carefully selected music playlist. Participants lie on the couch with eyeshades and headphones, and the two facilitators sit nearby, present but unobtrusive. The entire design philosophy is to create an environment that says, without words, "you are safe here."`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          This matters more than it might seem. Imperial College London ran a comparison that highlighted the difference. Their early psilocybin studies were conducted in a standard clinical research facility: white walls, fluorescent lighting, an fMRI scanner. Functional, but sterile. Later, they shifted toward a more relaxed, naturalistic setting. The subjective reports changed. Participants in the warmer environment reported more mystical-type experiences, greater emotional openness, and fewer anxiety responses. The compound was the same. The dose was the same. The room was different.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Music is a particularly potent element of setting. The Hopkins playlist, developed by Bill Richards, who has been working in psychedelic therapy since the 1960s, is a carefully sequenced journey of classical and world music designed to support the emotional arc of the experience. Mendel Kaelen at Imperial College published research in Psychopharmacology showing that the perceived quality of the music during a psilocybin session predicted therapeutic outcomes weeks later. The music {`isn't`} background noise. {`It's`} a structural element of the experience, providing a kind of emotional scaffolding when the {`ego's`} usual organizing functions go offline.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The social dimension of setting is equally important. Who is in the room? Do you trust them? Are they sober? Are they paying attention? The presence of a grounded, attentive facilitator, or even just a trusted friend, can be the difference between a difficult experience that produces growth and a difficult experience that produces trauma. The research consistently shows that the quality of the therapeutic relationship is one of the strongest predictors of outcome in psychedelic-assisted therapy, which should surprise no one who has ever been vulnerable in front of another person.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
@@ -288,69 +292,101 @@ export const posts: Post[] = [
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Set and setting are not independent variables. They interact in ways that make the simple model \u2014 control the inputs, predict the outputs \u2014 inadequate. A person with a high-anxiety set may be able to navigate a challenging experience in the presence of a deeply trusted guide they cannot in a clinical room with a stranger they met two weeks ago. A physically beautiful setting may amplify both the positive and negative dimensions of a session depending on what emotional material the participant brings to it.`}
+          {`Here's where most discussions of set and setting fall short: they treat these as independent variables. They're not.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`This interaction is part of why outcomes in naturalistic settings \u2014 where set and setting are uncontrolled \u2014 are so variable, and why clinical trials that carefully manage both variables show more consistent results. It is also why harm reduction frameworks consistently emphasize preparation. You cannot fully control your set on the day of a session. But you can spend the weeks before it cultivating the psychological conditions \u2014 emotional clarity, resolved interpersonal conflicts where possible, clear intention \u2014 that give the experience its best chance.`}
-        </p>
-
-        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Integration as the Third Variable
-        </h2>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Researchers and clinicians increasingly talk about a third variable: integration. What happens after a psychedelic experience \u2014 how you make meaning of it, how you translate insight into behavior, how you metabolize what was emotionally difficult \u2014 is as determinative of long-term outcomes as what happened during the session itself.`}
+          {`A pristine setting can't compensate for a mind in crisis. You can have the most beautiful retreat center in the world, the most experienced facilitators, the most perfectly curated playlist, and if someone is in acute psychological distress, carrying unprocessed trauma they're not ready to face, or fundamentally unwilling to surrender control, the setting becomes irrelevant. The compound will find the fault lines regardless.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          A 2022 study by Bathje, Majeski, and Kudowor in <em>Frontiers in Psychology</em> reviewed the integration literature and found that participants who engaged in structured integration practices {`\u2014 journaling, therapy, community support, contemplative practice \u2014`} showed significantly better sustained outcomes than those who did not. The experience plants a seed. Integration is what determines whether it grows.
+          A strong mindset can be undermined by a chaotic or unsafe environment. Someone who has done deep preparatory work, set clear intentions, and feels psychologically ready can still have that foundation pulled out from under them by a noisy room, an unreliable sitter, or an environment that feels threatening.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Rosalind Watts at Imperial College developed the Accept, Connect, Embody (ACE) framework for post-psilocybin integration, grounded in the observation that the most therapeutically significant experiences tended to involve increased feelings of connectedness \u2014 to self, to others, to the world \u2014 and that integration work needed to help participants anchor those felt shifts in embodied daily life. Insight without integration fades. The work of the weeks and months after a session is, in many ways, the real work.`}
+          {`The clinical programs understand this, which is why they invest heavily in both. The MAPS protocol doesn't just prepare the participant or optimize the room. It does both, because the interaction between the two is where the actual experience takes shape.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`What the research suggests, and what experienced practitioners will tell you, is that set and setting function as a system. They create the field within which the psychedelic experience unfolds. Get both right, and the compound has the best possible chance of doing what it does. Get one or both wrong, and you're rolling dice with your nervous system.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          What This Means in Practice
+          Integration: The Third Variable No One Talks About Enough
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Whether or not you are working with a clinician, the research on set and setting points toward the same conclusions. Preparation matters. Intention matters. Environment matters. Relationship matters. These are not soft factors that get in the way of the real pharmacology. They are the pharmacology, operating at a different level of analysis.
+          {`Leary's original formulation was set and setting. Two variables. But there's a third that the modern clinical programs have identified as equally important, and it's the one most people in recreational contexts ignore entirely: integration.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`People who have the most transformative and therapeutically useful psychedelic experiences are rarely those who stumbled into them unprepared. They are, more often, people who treated the experience with the seriousness it deserves \u2014 who created the conditions for something meaningful to happen, and who did the work afterward to understand what did.`}
+          {`Integration is what happens after. It's the process of making sense of the experience, translating its insights into lasting change, and metabolizing whatever emotional material came up during the session. Without it, even the most profound experience can evaporate within weeks: a beautiful memory with no practical impact on how you actually live.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The molecule opens a door. Set and setting determine what's on the other side.`}
+          {`Rosalind Watts, who led the psilocybin for depression trial at Imperial College London, developed what she calls the "Accept, Connect, Embody" framework for integration. The model recognizes that the insights generated during a psychedelic experience are fragile. They exist in a kind of liminal space, vivid and felt during the session, but easily overwritten by the brain's default patterns if they're not actively reinforced.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The data supports this. In the Imperial College depression trial, participants who received structured integration support maintained their improvements at six-month follow-up at significantly higher rates than those who didn't. A 2019 study by Bathje et al. in the Journal of Humanistic Psychology found that the single strongest predictor of lasting benefit from a psychedelic experience wasn't dose, wasn't the intensity of the acute experience, and wasn't even the occurrence of a mystical-type experience. It was the quality and consistency of post-experience integration practices.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`This is why I think "set and setting" is actually an incomplete framework. It should be "set, setting, and integration." The preparation shapes the experience. The environment holds the experience. The integration gives the experience somewhere to land.`}
+        </p>
+
+        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
+          What This Means Outside the Clinic
+        </h2>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Most of the research I've cited comes from controlled clinical settings: screened participants, trained facilitators, carefully designed environments, structured protocols. The real world doesn't work like that.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`I think it's important to be honest about this gap. The vast majority of psychedelic experiences happen outside clinical trials, and they happen in conditions that range from thoughtful and intentional to completely haphazard. The kid at a festival who eats a handful of mushrooms because his friend said they were fun is not operating in the same universe as a Johns Hopkins participant who has spent twelve hours in preparatory therapy.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`And yet the principles still apply. Set and setting aren't clinical inventions; they're descriptions of how psychedelics actually work in any context. The question isn't whether your mindset and environment shape the experience. They do, every time. The question is whether you've been intentional about them.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`You don't need a clinical research suite. You don't need a licensed therapist. But you do need to ask yourself some honest questions before you sit down with a powerful psychoactive compound: Why am I doing this? What am I carrying right now? Where am I, and do I feel safe? Who is with me, and do I trust them? And the question most people forget: what happens tomorrow?`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`I'm not here to tell you what to do. I'm here to tell you that the research is clear: these variables aren't nice-to-haves. They're the architecture of the experience itself.`}
         </p>
       </>
     ),
     references: [
       {
-        text: 'Leary, T., Metzner, R., & Alpert, R. (1964). The Psychedelic Experience.',
+        text: 'Leary, T., Metzner, R., & Alpert, R. (1964). The Psychedelic Experience: A Manual Based on the Tibetan Book of the Dead.',
         source: 'University Books',
       },
       {
-        text: 'Haijen, E.C.H.M., et al. (2018). Predicting responses to psychedelics.',
+        text: 'Haijen, E.C.H.M., et al. (2018). Predicting responses to psychedelics: A prospective study.',
         source: 'Journal of Psychopharmacology',
       },
       {
-        text: 'Kaelen, M., et al. (2018). The hidden therapist.',
+        text: 'Kaelen, M., et al. (2018). The hidden therapist: Evidence for a central role of music in psychedelic therapy.',
         source: 'Psychopharmacology',
       },
       {
-        text: 'Watts, R., et al. (2017). Patients\' accounts of increased "connectedness."',
+        text: 'Watts, R., et al. (2017). Patients\' accounts of increased "connectedness" and "acceptance" after psilocybin for treatment-resistant depression.',
         source: 'Journal of Humanistic Psychology',
       },
       {
-        text: 'Bathje, G.J., Majeski, E., & Kudowor, M. (2022). Psychedelic integration.',
+        text: 'Bathje, G.J., Majeski, E., & Kudowor, M. (2022). Psychedelic integration: An analysis of the concept and its practice.',
         source: 'Frontiers in Psychology',
       },
       {
-        text: 'Johnson, M.W., Richards, W.A., & Griffiths, R.R. (2008). Human hallucinogen research.',
+        text: 'Mithoefer, M.C., et al. (2019). MDMA-assisted psychotherapy for treatment of PTSD: Study design and rationale for Phase 3 trials.',
+        source: 'Psychopharmacology',
+      },
+      {
+        text: 'Johnson, M.W., Richards, W.A., & Griffiths, R.R. (2008). Human hallucinogen research: Guidelines for safety.',
         source: 'Journal of Psychopharmacology',
       },
     ],
@@ -367,43 +403,63 @@ export const posts: Post[] = [
     content: () => (
       <>
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Take everything you think of as "you" \u2014 your name, your memories, the running narrative in your head, the felt sense of being a separate entity located somewhere behind your eyes \u2014 and imagine it dissolving. Not going away forever. Just loosening. The boundaries softening. The narrator going quiet.`}
+          {`Here's a thought experiment. Take everything you think of as "you": your name, your memories, your opinions, the running narrative in your head that tells you who you are and what you want, and imagine it dissolving. Not going away forever. Just loosening. The boundary between where you end and the world begins getting soft, then transparent, then gone.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`This isn't a metaphor. It's a measurable, reproducible phenomenon that researchers have given a name, developed a validated scale to measure, and begun to map onto neural activity in the brain. It's called ego dissolution, and it may be the central mechanism through which psychedelics produce their most profound and lasting effects.`}
-        </p>
-
-        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Measuring the Unmeasurable
-        </h2>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`For decades, the dissolution of self-boundaries was the kind of thing researchers were reluctant to take seriously \u2014 too subjective, too mystical, too far outside the framework of operationalizable variables that science requires. That changed in 2016, when Matthew Nour and colleagues at University College London published a validation study for the Ego Dissolution Inventory (EDI), a 16-item self-report scale designed to capture the phenomenology of ego loss with enough precision to compare across participants, doses, and substances.`}
+          {`This isn't a metaphor. It's a measurable, reproducible phenomenon that occurs reliably under high-dose psychedelics, and it's been reported across cultures and centuries. Researchers now have a name for it, a validated scale to measure it, and a growing body of neuroimaging data showing what the brain looks like when it happens.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The EDI measures things like the sense that the boundary between oneself and the environment has dissolved, the feeling that one has merged with the universe, the absence of the normal sense of self as a distinct entity, and the experience of consciousness without a subject \u2014 awareness without the usual "I" at the center of it. When participants are given psilocybin, LSD, or ayahuasca under controlled conditions, EDI scores reliably increase in dose-dependent ways. Higher doses produce more complete dissolution. The relationship is consistent enough to call it a biomarker of sorts \u2014 a reliable index of how far into the experience a person has traveled.`}
+          They call it ego dissolution. And it might be the most important, and most misunderstood, aspect of the psychedelic experience.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          What Philosophy Has Always Known
+          The Phenomenon
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          The scientists were late to this conversation. Philosophers had been circling it for centuries.
+          {`Ego dissolution isn't feeling spacey. It's not confusion, and it's not simply "losing your mind," though it can feel like that if you're not prepared for it. What it actually involves is the temporary dissolution of the cognitive structure that generates your sense of being a separate, bounded self, an "I" that exists distinct from everything else.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`David Hume, writing in 1739, described his own introspective investigations with characteristic bluntness: whenever he tried to catch himself, he said, he always stumbled on some particular perception \u2014 heat or cold, love or hatred, pleasure or pain. He never could catch "himself" apart from a perception. The self, Hume concluded, was not a thing but a bundle \u2014 a collection of experiences that the mind habituates into a narrative of continuity.`}
+          {`In practice, people describe it in remarkably consistent ways across studies and across cultures. The boundaries of the body feel like they're expanding or disappearing. The distinction between self and environment breaks down. The internal monologue, the narrator I wrote about in the DMN piece, goes quiet or vanishes entirely. What remains is awareness without a center. Experience without an experiencer.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Buddhist philosophy had arrived at the same conclusion roughly two thousand years earlier. The doctrine of <em>anatta</em> {`\u2014 non-self \u2014`} holds that what we call the self is not a fixed, independent entity but a process: a stream of arising and passing phenomena to which we mistakenly attribute permanence and ownership. The practice of meditation, in many Buddhist traditions, is precisely the practice of seeing through this illusion clearly enough that it loosens its grip.
+          {`Nour et al. developed the Ego Dissolution Inventory (EDI) in 2016, published in Frontiers in Human Neuroscience, to actually quantify this. The scale captures the core features: "I experienced a dissolution of my 'self' or ego," "I felt at one with the universe," "I lost all sense of self." They validated it across multiple substances and doses, and found that ego dissolution scales reliably with dose intensity. More compound, more dissolution. It also correlates strongly with mystical-type experience ratings, but the two aren't identical: you can have mystical experience without complete ego dissolution, and you can have ego dissolution that feels more terrifying than transcendent.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          What psychedelics appear to do is compress that process. Experienced meditators report states of ego dissolution after years or decades of sustained practice. Psilocybin can produce similar states in someone who has never meditated a day in their life, within ninety minutes of ingestion. Whether the states are identical is an ongoing question. Whether they share important features seems increasingly clear.
+          {`That last point matters. I'll come back to it.`}
+        </p>
+
+        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
+          The Philosophers Got There First
+        </h2>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Western philosophy has been circling this territory for centuries, even if it didn't have the pharmacological tools to induce it on demand.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`David Hume, writing in the 1730s, proposed what he called the "bundle theory" of self. He argued that when he looked inward, he never found a unified "self": just a stream of perceptions, feelings, and thoughts bundled together. The self, he suggested, is a fiction the mind constructs to give that bundle coherence. There is no permanent "I" hiding behind the experiences. There are just the experiences.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`That's a remarkably good description of what people report during ego dissolution. The bundle unpacks.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Buddhists, of course, had this figured out roughly two thousand years before Hume. The concept of anatta (no-self) is one of the foundational insights of Buddhist philosophy. The self is not a thing that exists. It's a process, a construction, something the mind is doing rather than something the mind is. Meditation practices, particularly vipassana and certain Zen traditions, are designed to reveal this directly, to create the experiential conditions under which the practitioner can see through the illusion of selfhood.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The overlap between deep meditation and psychedelic experience isn't coincidental. Both disrupt the same neural infrastructure. But where meditation typically takes years of disciplined practice to produce ego dissolution, psilocybin can do it in about forty minutes.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Whether that's a feature or a bug depends entirely on the context.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
@@ -411,97 +467,125 @@ export const posts: Post[] = [
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Aldous Huxley offered a different framing in <em>The Doors of Perception</em> (1954). Drawing on Henri Bergson, he proposed that the brain functions as a reducing valve {`\u2014`} a filter that narrows the full spectrum of possible experience down to the small slice that is biologically useful for survival. Ordinary consciousness is not a window onto reality but a keyhole: precise, practical, and radically limited.
+          {`Aldous Huxley, writing about his mescaline experience in The Doors of Perception in 1954, proposed an idea that has aged remarkably well. The brain, he suggested, doesn't generate consciousness so much as filter it. It functions as a "reducing valve," narrowing the enormous scope of potential awareness down to the thin trickle of perception necessary for biological survival. You don't need to experience cosmic unity while running from a predator. You need to see the predator and know which direction to run.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Mescaline, in Huxley's account, temporarily disables the reducing valve. What floods in is not distortion but expansion \u2014 more data, more vividness, more of what is actually there. The self that narrows and filters and selects loosens its grip, and experience becomes less managed and more immediate.`}
+          {`Psychedelics, in Huxley's framework, open the valve. They reduce the brain's filtering capacity, allowing more of reality (or at least more of the mind's potential experience of reality) to flood in. The self dissolves because the self was always a product of the filter. Remove the constraints, and the boundaries of identity become arbitrary.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Alan Watts extended this reading in <em>The Joyous Cosmology</em> (1962), arguing that the ordinary ego is not a discovery but a performance {`\u2014`} a social construction we mistake for a bedrock reality. The ego is a habit of attention, he wrote, not a thing. And like any habit, it can, under the right conditions, be interrupted.
+          {`Modern neuroscience hasn't proven Huxley right in a literal sense; the "reducing valve" is a metaphor, not a mechanism. But the neuroimaging data is consistent with his intuition. The brain under psilocybin doesn't show more organized activity. It shows less filtering, less hierarchical control, less top-down constraint. The default mode network, which as I discussed in the previous post is the primary neural correlate of self-referential processing, decreases in activity and internal coherence. The gatekeeper steps aside.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`What makes Watts's framing particularly resonant is that it is not pathologizing. The ego is not an enemy. It is a useful fiction, one that allows us to navigate social reality and maintain a coherent life story. The problem arises when the fiction hardens into a cage \u2014 when the habit of self-reference becomes so rigid that it prevents genuine contact with other people, with the present moment, with anything outside its own narrow loop.`}
-        </p>
-
-        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          What the Brain Does
-        </h2>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Neuroscience has begun to give this philosophical tradition a structural home. In 2015, Lebedev and colleagues published neuroimaging data showing that psilocybin produces marked disintegration of the Default Mode Network (DMN) \u2014 the set of brain regions most associated with self-referential thought, autobiographical memory, and the construction of a continuous narrative self. This DMN suppression correlated strongly with subjective reports of ego dissolution on validated scales. The more the network quieted, the more self-boundaries dissolved.`}
+          {`Alan Watts, working in a parallel tradition, made a related but distinct argument. The ego, Watts proposed, isn't just a cognitive structure; it's a social one. We construct a sense of separate selfhood not because the universe is actually divided into "me" and "everything else," but because our culture requires it. The ego is a performance, a role we learn to play so seamlessly that we forget it's a role. Psychedelics, in Watts's view, reveal the performance for what it is.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`A 2016 study by Tagliazucchi and colleagues extended this finding to LSD, showing that ego dissolution correlated not only with DMN suppression but with a dramatic increase in global functional connectivity \u2014 essentially, the brain becoming more integrated and less modular. Under normal conditions, neural networks operate in relatively segregated clusters. Under LSD, those clusters lose their boundaries and begin communicating in ways they ordinarily do not. The result, at the subjective level, is the dissolution of the distinctions that ordinarily organize experience: self and world, inside and outside, subject and object.`}
-        </p>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`It is worth pausing on what this means. The sense of being a separate self \u2014 so fundamental to ordinary experience that it is almost invisible \u2014 appears to depend on specific patterns of neural organization. When those patterns are disrupted, the self does not merely feel different. It feels absent. And what remains \u2014 awareness without a self at its center \u2014 is what both meditators and psychedelic travelers have been trying to describe for millennia.`}
+          {`I think Watts was onto something important, and I think it partially explains why ego dissolution is so destabilizing for people raised in Western cultures that treat individual selfhood as the foundational unit of reality. More on that shortly.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Why It Matters Therapeutically
+          What the Brain Is Doing
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The 2006 Johns Hopkins study by Roland Griffiths and colleagues remains one of the most important pieces of psychedelic research ever published. In a double-blind, placebo-controlled design, participants who received high-dose psilocybin reported mystical-type experiences \u2014 characterized by a sense of unity, sacredness, deep positive mood, and transcendence of time and space \u2014 at rates that astonished the researchers. More than 60% of participants rated the experience among the five most meaningful of their lives. More than 30% rated it as the single most meaningful experience they had ever had.`}
+          {`The neuroscience of ego dissolution has gotten considerably more precise since Huxley was writing. Lebedev et al. published a key study in Human Brain Mapping in 2015 showing that the degree of ego dissolution reported by participants under psilocybin correlated directly with the degree of disintegration within the default mode network. The more the DMN fell apart, the more the sense of self dissolved. This wasn't a loose association; it was a tight, dose-dependent relationship.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`In a follow-up study published in 2008, Griffiths and colleagues found that these ratings held at 14 months. Two-thirds of participants still regarded the experience as among the most personally significant of their lives, and the mystical quality of the experience \u2014 which the Ego Dissolution Inventory now helps us measure \u2014 was the strongest predictor of sustained positive change in attitudes, behavior, and wellbeing.`}
+          {`What's happening, as best we can currently model it, is that the DMN normally maintains a coherent pattern of self-referential processing, the ongoing narrative of "I." When psilocybin disrupts this network, the narrative loses its structural integrity. The brain regions that normally coordinate to produce your sense of being a continuous, bounded self stop coordinating. And the subjective result is exactly what you'd expect: the self comes apart.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The therapeutic implication is significant. Many of the conditions for which psilocybin is showing efficacy \u2014 depression, addiction, existential anxiety in the face of terminal illness \u2014 share a common feature: a rigid, self-focused cognitive style in which the person is trapped in their own narrative. The depressed person cannot stop rehearsing their failures. The addicted person cannot escape the loop of craving and shame. The dying person cannot stop identifying with the body that is failing.`}
+          {`Simultaneously, and this is the part I find most interesting, connectivity between networks increases. The brain doesn't just lose its sense of self. It enters a state of radically increased communication between regions that normally operate independently. Tagliazucchi et al. (2016) described this as a state of "increased global connectivity," the brain talking to itself in ways it normally can't or doesn't.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Ego dissolution, at its therapeutic best, interrupts that loop. Not by providing a new narrative, but by briefly suspending the mechanism that generates narratives altogether. What people often report afterward is not that they have discovered new content but that the usual content has lost its grip. The story is still there, but they are no longer entirely inside it.
+          {`So ego dissolution isn't just a subtraction. It's a reorganization. The dissolution of the normal self-structure coincides with the emergence of a much broader, more interconnected mode of processing. This may be why people don't just report "losing the self"; they report a sense of unity, of connectedness, of being continuous with everything around them. The borders come down, and what was previously separated flows together.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          The Paradox: Terror as Insight
+          The Paradox at the Center
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`It would be misleading to describe ego dissolution as uniformly positive. The dissolution of the self-boundary is among the most disorienting experiences a human being can have. People who enter without preparation, without support, without the psychological resources to metabolize the experience, can find it profoundly terrifying. The clinical literature is clear on this. Challenging experiences \u2014 commonly called "difficult trips" \u2014 are real, common, and can have lasting negative effects when poorly managed.`}
+          {`Here's what makes ego dissolution so strange as a therapeutic phenomenon: it is consistently rated as both one of the most challenging and one of the most meaningful aspects of high-dose psychedelic experiences.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`But there is something important in the paradox. The fear of ego dissolution is, almost by definition, the ego's fear of its own dissolution. And many people who have navigated that terror \u2014 with support, with preparation, with time \u2014 report that the terror itself was part of the insight: a confrontation with the depth of their attachment to the self they had been maintaining, and a discovery that something remained when that self let go.`}
+          {`Griffiths et al., in their 2006 landmark psilocybin study and subsequent follow-ups, found that participants who reported complete mystical experiences (which include ego dissolution as a core feature) rated the experience among the top five most personally meaningful events of their lives, alongside things like the birth of a child or the death of a parent. At 14-month follow-up, 67% of participants still rated it in their top five.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`This is not a comfortable teaching. It does not fit neatly into a wellness framework. But it is, increasingly, what the research is showing. The experiences that produce the most durable positive change are not always the comfortable ones. They are, more often, the experiences that were big enough to interrupt business as usual \u2014 including the very ordinary business of being, without interruption, oneself.`}
+          {`And yet, in the same studies, participants also frequently describe intense fear during the dissolution itself. The experience of losing your self, even temporarily, even in a safe environment, is often terrifying. Because as long as you are identified with the ego, its dissolution feels exactly like dying.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`This is the paradox: the thing that produces the greatest therapeutic benefit is also the thing that produces the greatest psychological challenge. The studies on psilocybin for depression, addiction, and end-of-life anxiety consistently show that the depth of ego dissolution correlates with the magnitude of therapeutic outcome. The more completely the self dissolves, the more lasting the improvement.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Which means you can't get the benefit without going through the difficulty. There's no way to cherry-pick the insight while avoiding the terror. The terror is part of the insight. You learn that the self can come apart and you don't actually die. And that learning, that visceral, not-intellectual, full-body understanding that you are not your narrative, appears to be what produces lasting change.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          The Cultural Dimension
+          The Dark Side
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Western culture has a particular investment in individual selfhood. The self is the basic unit of moral consideration, the subject of rights and responsibilities, the locus of identity and agency. To speak of its dissolution is, in this context, not merely philosophically provocative but culturally threatening.
+          {`I'm not going to pretend this is all upside.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`This may partly explain why ego dissolution is such a difficult concept to metabolize even for people who have experienced it. We live in a culture that tells us, continuously, that the self is what we are \u2014 not a process, not a habit of attention, not a useful fiction, but the irreducible core of our being. To have that story interrupted, even briefly, even productively, can feel like a kind of death.`}
+          {`Ego dissolution without proper support, without adequate preparation, without a safe environment, without someone grounded nearby, can be genuinely destabilizing. The clinical trials screen out people with psychotic spectrum disorders, personal or family history of schizophrenia, and other risk factors for a reason. For some people, dissolving the ego doesn't produce insight. It produces a crisis that can take months to recover from.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Which is, of course, exactly what many traditions have always said it is. Not the death of the person, but the death of a particular way of holding oneself \u2014 a loosening that makes genuine contact, genuine presence, and genuine change possible. The self does not disappear. It just becomes, for a time, a little less solid. And in that loosening, something opens.`}
+          {`Even for psychologically healthy individuals, an unexpected or forced ego dissolution (which is what can happen when someone takes a higher dose than they intended, or has an experience in an unsafe environment) can result in lasting anxiety, derealization, and difficulty reintegrating. The self comes apart, and if the conditions aren't right, it doesn't go back together cleanly.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The clinical programs mitigate this through careful screening, preparation, dosing protocols, and integration support. The recreational world mostly doesn't. And I think anyone who writes about ego dissolution has an obligation to say clearly: this is not something to pursue casually. The depth of the experience is exactly proportional to the risk if things go wrong.`}
+        </p>
+
+        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
+          Why the West Has a Particular Problem
+        </h2>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Western culture is built on a very specific model of selfhood. You are an individual. You have rights, preferences, goals, a personal brand. Your success or failure is yours. Your identity is yours. The entire economic and social infrastructure assumes a discrete, bounded self as the basic unit.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Ego dissolution is a direct challenge to that entire framework.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`I think this is why the psychedelic renaissance provokes such polarized reactions. For some people, often those who feel trapped by their own self-narrative, imprisoned by patterns of rumination and self-criticism, the dissolution of the ego is liberation. The prison door opens. For others, those whose identity is tightly bound to their achievements, their control, their story, it's an existential threat.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Both reactions are valid. And both tell you something about the relationship between the person and their ego, which is to say, the relationship between the person and the story they've been telling themselves about who they are.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          The Eastern contemplative traditions have been working with this for millennia, and they generally agree on one thing: the self is not what it appears to be. Whether you arrive at that understanding through twenty years of meditation or twenty milligrams of psilocybin, the insight is the same. The question is what you do with it afterward.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`And that question, the integration question, the "so now what?", is where the real work begins.`}
         </p>
       </>
     ),
     references: [
       {
-        text: 'Nour, M.M., Evans, L., Nutt, D., & Carhart-Harris, R.L. (2016). Ego-dissolution and psychedelics.',
+        text: 'Nour, M.M., Evans, L., Nutt, D., & Carhart-Harris, R.L. (2016). Ego-dissolution and psychedelics: Validation of the Ego-Dissolution Inventory (EDI).',
         source: 'Frontiers in Human Neuroscience',
       },
       {
-        text: 'Lebedev, A.V., et al. (2015). Finding the self by losing the self.',
+        text: 'Lebedev, A.V., et al. (2015). Finding the self by losing the self: Neural correlates of ego-dissolution under psilocybin.',
         source: 'Human Brain Mapping',
       },
       {
@@ -509,11 +593,11 @@ export const posts: Post[] = [
         source: 'Current Biology',
       },
       {
-        text: 'Griffiths, R.R., et al. (2006). Psilocybin can occasion mystical-type experiences.',
+        text: 'Griffiths, R.R., et al. (2006). Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance.',
         source: 'Psychopharmacology',
       },
       {
-        text: 'Griffiths, R.R., et al. (2008). Mystical-type experiences occasioned by psilocybin mediate attribution of personal meaning 14 months later.',
+        text: 'Griffiths, R.R., et al. (2008). Mystical-type experiences occasioned by psilocybin mediate the attribution of personal meaning and spiritual significance 14 months later.',
         source: 'Journal of Psychopharmacology',
       },
       {
@@ -521,7 +605,7 @@ export const posts: Post[] = [
         source: 'Chatto & Windus',
       },
       {
-        text: 'Watts, A. (1962). The Joyous Cosmology.',
+        text: 'Watts, A. (1962). The Joyous Cosmology: Adventures in the Chemistry of Consciousness.',
         source: 'Pantheon Books',
       },
       {
@@ -542,11 +626,15 @@ export const posts: Post[] = [
     content: () => (
       <>
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The story most people know \u2014 Leary discovered psychedelics, Nixon banned them, Johns Hopkins brought them back \u2014 is wrong in almost every way that matters. The real history is longer, darker, and more interesting. It spans at least nine thousand years, crosses four continents, involves an act of cultural erasure that took centuries to accomplish, and was nearly complete before a New York banker went to Oaxaca on vacation.`}
+          {`The story most people know goes something like this: in the 1960s, Timothy Leary discovered psychedelics, everyone got high, Nixon got angry, and the government banned everything. Then, around 2006, some brave researchers at Johns Hopkins brought it all back.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Understanding that history is not merely an exercise in accuracy. It shapes how we understand what we're working with \u2014 and what we owe to the people who kept this knowledge alive when doing so was dangerous.`}
+          {`That story is wrong in almost every way that matters. It centers the wrong people, skips the most important chapters, and conveniently erases the fact that human beings have been using psychoactive mushrooms for somewhere between seven and nine thousand years, and that the cultures who carried that knowledge were systematically ignored, exploited, and damaged in the process.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          The real history is longer, darker, and more interesting. Let me try to tell it honestly.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
@@ -554,141 +642,201 @@ export const posts: Post[] = [
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The Tassili n'Ajjer cave paintings in present-day Algeria are among the oldest images of human spiritual life ever found. Some researchers, most notably Giorgio Samorini, have argued that mushroom-like forms depicted in these paintings \u2014 some appearing to sprout from the bodies of human figures \u2014 represent psychoactive fungi, dating the relationship between humans and psychedelic mushrooms to between 7,000 and 9,000 BCE. The interpretation is contested; rock art is always speculative. But the paintings themselves are not. The imagery is real, and it predates written language by several thousand years.`}
+          {`In the Tassili n'Ajjer plateau of southeastern Algeria, there are cave paintings dating to roughly 7,000\u20139,000 BCE. Among the images of animals and hunters, there's one figure that has generated decades of academic debate: a humanoid form with mushroom-shaped objects sprouting from its body and hands, sometimes called the "mushroom shaman" or the "bee-faced man."`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Across the Atlantic, in Mesoamerica, the evidence becomes harder to dispute. The Aztec used psilocybin-containing mushrooms \u2014 which they called `}<em>{`teonan\u00e1catl`}</em>{`, meaning "flesh of the gods" \u2014 in religious ceremonies that were central to their civilization. The Spanish friar Bernardino de Sahag\u00fan documented this in the `}<em>Florentine Codex</em>{` (compiled around 1577), describing in careful detail the effects of the mushrooms, the contexts in which they were used, and the reverence with which they were regarded. He was not celebrating this. He was cataloguing what he intended to help destroy.`}
+          {`Ethnobotanist Giorgio Samorini and later Terence McKenna pointed to this figure as evidence that humans were using psychoactive mushrooms in North Africa thousands of years before recorded history. The identification is contested; some archaeologists argue the shapes could represent plants, ritual objects, or artistic abstractions that have nothing to do with fungi. The rock art is ambiguous by nature, and projecting modern psychedelic culture backward onto Neolithic images is a real methodological risk.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Mushroom stones \u2014 carved stone effigies in the form of mushrooms, some with human faces \u2014 have been found throughout Guatemala and southern Mexico dating back over three thousand years. These are not decorative objects. Archaeologists and ethnobotanists have interpreted them as ritual artifacts associated with ceremonial mushroom use, evidence of a tradition that was already ancient when the Spanish arrived.`}
-        </p>
-
-        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          The Suppression
-        </h2>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The Spanish colonization of Mesoamerica was, among other things, a project of spiritual conquest. The Catholic Church was explicit about this. Indigenous religious practices \u2014 including the use of sacred plants \u2014 were systematically identified, condemned, and punished. Sahag\u00fan's documentation was itself part of this project: you cannot eliminate what you have not first described.`}
-        </p>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The Inquisition actively prosecuted indigenous people found using sacred plants, including mushrooms. The practices were driven underground. In many communities, they disappeared entirely \u2014 or survived only in the most isolated and protected corners of the mountains, held by a small number of specialists called `}<em>curanderos</em> and <em>curanderas</em>{`, or in the Mazatec tradition, `}<em>chjota chine</em>{`: people of knowledge.`}
-        </p>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          For roughly four hundred years, from the mid-1500s to the mid-1900s, the Western world was almost entirely unaware that these practices had survived. Most anthropologists assumed they had been extinguished. They were wrong.
+          {`But the broader point stands even without Tassili: humans have been seeking altered states of consciousness for as long as we've been human. Every culture on every continent has developed technologies for this, fermentation, plant medicines, breathwork, fasting, drumming, dance. The idea that consciousness alteration is a modern invention, or a uniquely Western one, or a product of the 1960s counterculture, is historically illiterate.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          {`R. Gordon Wasson and Mar\u00eda Sabina`}
+          Mesoamerica: Flesh of the Gods
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`In 1955, R. Gordon Wasson \u2014 a vice president at J.P. Morgan with a passionate amateur interest in mycology \u2014 traveled to the remote mountain village of Huautla de Jim\u00e9nez in Oaxaca, Mexico. There he attended a `}<em>velada</em>{`, a traditional Mazatec healing ceremony, conducted by a curandera named Mar\u00eda Sabina. He was, as far as the historical record shows, the first outsider ever to participate in such a ceremony.`}
+          {`The most extensive documented history of ceremonial mushroom use comes from Mesoamerica, and it's not ambiguous at all.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`What happened next changed history, and not only for the better. Wasson described his experience in a 1957 article for `}<em>Life</em>{` magazine titled "Seeking the Magic Mushroom" \u2014 a piece read by millions of Americans and credited, more than almost any other single document, with introducing the concept of psychedelic mushrooms to the Western world.`}
+          {`The Aztecs called psilocybin mushrooms teonan\u00e1catl, literally "flesh of the gods" or "divine mushroom." Spanish colonial accounts from the 16th century, particularly those of Bernardino de Sahag\u00fan, describe elaborate ceremonies in which mushrooms were consumed for divination, healing, and communion with the divine. Sahag\u00fan's Florentine Codex, written in the 1570s, describes participants eating mushrooms with honey, then experiencing visions, weeping, and states of ecstasy or terror.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The consequences for Mar\u00eda Sabina and her community were devastating. Tourists flooded into Huautla. The sacred practice became a spectacle. Sabina, who had shared her tradition in the belief that Wasson was a sincere seeker, found her home repeatedly visited, her ceremonies commercialized, and her standing in her own community destroyed. Local people blamed her for bringing outsiders who did not understand or respect what they were taking part in. Her house was burned. She was ostracized. She died in 1985 in poverty, her community transformed by the attention that had been neither asked for nor wanted.`}
+          The archaeological record goes much deeper. Mushroom stones, carved stone figures depicting mushroom forms, often combined with human or animal features, have been found throughout Guatemala and southern Mexico, dating as far back as 1000 BCE. More than 200 of these have been recovered. Whatever they represent, they indicate that mushrooms held significant cultural and spiritual weight in pre-Columbian Mesoamerica for at least three thousand years.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Wasson later expressed regret. But the pattern he set in motion \u2014 Western seekers arriving in indigenous communities, taking what is offered, publishing it for mass consumption, and leaving the community to absorb the consequences \u2014 did not end with him. It continues today, and the story of Mar\u00eda Sabina is essential context for any honest conversation about it.`}
+          {`The Spanish colonizers, predictably, tried to stamp it out. Mushroom ceremonies were declared idolatry and suppressed under the Inquisition. The practices didn't disappear; they went underground, preserved in remote indigenous communities, particularly among the Mazatec people of Oaxaca, Mexico. They survived for four hundred years in secret.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          And then a banker from New York showed up.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Albert Hofmann and the Chemistry
+          The Wasson Problem
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Three years after Wasson's velada, the Swiss chemist Albert Hofmann \u2014 already famous for having synthesized LSD in 1938 and discovered its effects in 1943 \u2014 isolated and identified the active compounds in the mushrooms. In 1958, he published the structures of psilocybin and psilocin in `}<em>Helvetica Chimica Acta</em>{`, giving Western science its first precise chemical account of what the Mazatec had been working with for millennia.`}
+          {`R. Gordon Wasson was a vice president at J.P. Morgan and an amateur mycologist. In 1955, he traveled to the village of Huautla de Jim\u00e9nez in Oaxaca, where he participated in a velada, a mushroom healing ceremony, led by a Mazatec curandera named Mar\u00eda Sabina. He became, by his own account, the first known outsider to participate in such a ceremony.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Hofmann had received dried mushroom samples from Wasson, who had in turn received them from Mar\u00eda Sabina \u2014 who had agreed to the arrangement without understanding that it would lead to the industrial synthesis and global distribution of a compound her tradition had kept within a specific ceremonial context for generations. The chain of transmission is worth holding in mind.`}
+          {`Two years later, Wasson published an article in Life magazine titled "Seeking the Magic Mushroom." It was a sensation. The article introduced psilocybin mushrooms to mainstream Western culture and triggered a wave of interest that would eventually bring tourists, hippies, researchers, and opportunists flooding into Huautla de Jim\u00e9nez.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The consequences for Mar\u00eda Sabina and her community were devastating. The influx of outsiders disrupted the village. The sacred ceremonies were commodified and trivialized. Sabina herself was ostracized by her community, who blamed her for revealing the mushrooms to foreigners. Her house was burned down. She spent her final years in poverty, saying that the mushrooms had lost their power because they had been profaned.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`This is the part of the history that psychedelic enthusiasts often skip. The Western "discovery" of psilocybin mushrooms came at a direct cost to the people who had been stewarding that knowledge for centuries. Wasson didn't intend to cause harm; by most accounts he had genuine respect for the Mazatec tradition. But intent doesn't undo impact.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          The 1960s: Research, Chaos, and Backlash
+          The Laboratory
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The decade that followed Hofmann's isolation was one of the most scientifically productive \u2014 and ultimately most destructive \u2014 in the history of psychedelic research. Timothy Leary and Richard Alpert launched the Harvard Psilocybin Project in 1960, conducting studies on personality change, creativity, and spiritual experience that produced data of genuine interest and were methodologically flawed in ways that made them easy to dismiss. Their increasing public advocacy \u2014 the "turn on, tune in, drop out" period \u2014 transformed psilocybin and LSD from research compounds into cultural symbols of countercultural rebellion.`}
+          {`While Wasson was publishing in Life, the chemistry was moving forward independently. Albert Hofmann, the Swiss chemist who had accidentally discovered LSD in 1943, received samples of Psilocybe mexicana from Wasson and, in 1958, successfully isolated and synthesized psilocybin and psilocin. For the first time, the active compounds could be produced in a laboratory, measured in precise doses, and administered in controlled settings.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The CIA's parallel interest in psychedelics \u2014 documented under the program name MK-Ultra \u2014 involved dosing people without their consent and pursuing applications that had nothing to do with healing and everything to do with control. MK-Ultra was shut down after its exposure in the 1970s, but its shadow has complicated the research field ever since.`}
+          {`This opened the door to clinical research. Between 1960 and 1970, hundreds of studies were published on psychedelics. The work was wide-ranging: psychedelic-assisted psychotherapy for alcoholism, depression, anxiety in terminal cancer patients, and the study of consciousness itself. Some of it was rigorous. Some of it was sloppy. Some of it was ethically horrifying; the CIA's MK-Ultra program being the most notorious example.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`In 1970, the Nixon administration passed the Controlled Substances Act, placing psilocybin, LSD, and a range of other psychedelics in Schedule I \u2014 defined as substances with no accepted medical use and high potential for abuse. John Ehrlichman, Nixon's domestic policy advisor, gave a candid account of the motivation in an interview published years later: the War on Drugs, he said, was designed to target two groups \u2014 the antiwar left and Black Americans. "We knew we couldn't make it illegal to be against the war or Black," Ehrlichman said, "but by getting the public to associate the hippies with marijuana and Blacks with heroin, and then criminalizing both heavily, we could disrupt those communities."`}
+          {`And then there was Leary. Timothy Leary, a psychology lecturer at Harvard, launched the Harvard Psilocybin Project in 1960 with Richard Alpert (later Ram Dass). The project began as legitimate research and ended as spectacle. Leary's increasingly public advocacy for psychedelic use, his confrontational style, and his famous exhortation to "turn on, tune in, drop out" made him a counterculture icon and a political liability. He was fired from Harvard in 1963. Nixon would later call him "the most dangerous man in America."`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          The scheduling of psilocybin was not primarily a scientific decision. It was a political one. And it effectively ended legitimate research for thirty years.
+          {`Whether Leary helped or hurt the cause of psychedelic science is still debated, and I'm genuinely not sure there's a clean answer. His advocacy brought awareness. It also brought backlash. And the backlash was nuclear.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          The Long Silence
+          The Shutdown
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Between 1970 and the early 2000s, clinical research on psilocybin was essentially impossible in the United States. The regulatory barriers were prohibitive, funding was unavailable, and the reputational risk to any researcher who touched the topic was severe. A generation of potential researchers looked elsewhere. Knowledge accumulated in underground networks, in retreat centers in other countries, in harm reduction communities \u2014 but not in peer-reviewed journals.`}
+          The Controlled Substances Act of 1970 classified psilocybin, LSD, mescaline, and DMT as Schedule I substances, defined as having high potential for abuse, no currently accepted medical use, and no accepted safety for use under medical supervision.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          The work that did continue happened largely in Europe. Franz Vollenweider at the University of Zurich conducted careful neuroimaging and pharmacology studies throughout the 1990s that built the scientific framework on which later research would depend. His work was careful, rigorous, and almost entirely unknown to the general public.
+          Every part of that classification was wrong, and it was wrong on purpose.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The scheduling wasn't driven by science. It was driven by politics. The Nixon administration explicitly targeted psychedelics as part of a broader campaign to criminalize and marginalize the counterculture and the anti-war movement. John Ehrlichman, Nixon's domestic policy advisor, said it plainly in a 1994 interview: "We knew we couldn't make it illegal to be either against the war or Black, but by getting the public to associate the hippies with marijuana and Blacks with heroin, and then criminalizing both heavily, we could disrupt those communities."`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Psychedelics got swept into this political operation. The Schedule I designation didn't just make possession a crime; it made research effectively impossible. To study a Schedule I substance, you needed DEA approval, an FDA investigational new drug application, institutional review board clearance, and a willingness to build your career on a topic that would make you professionally radioactive.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Almost nobody was willing. For thirty years, from roughly 1970 to 2000, psychedelic research in the United States essentially stopped. Three decades of potential scientific progress, erased by political calculation.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          The Renaissance
+          The Long Silence and the Return
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          The revival began in the mid-1990s, driven in part by Rick Doblin and the Multidisciplinary Association for Psychedelic Studies (MAPS), which he had founded in 1986 with the explicit mission of navigating the regulatory pathways to make psychedelic research legal again. It was slow, grinding work {`\u2014`} years of meetings with the FDA, of building relationships with regulators, of demonstrating through meticulous protocol that research could be conducted safely.
+          The renaissance, when it came, was quiet.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The watershed moment came in 2006, when Roland Griffiths and colleagues at Johns Hopkins published their landmark psilocybin study in `}<em>Psychopharmacology</em>{`. The paper \u2014 which showed that psilocybin could reliably occasion mystical experiences rated by participants as among the most meaningful of their lives, with lasting positive effects on wellbeing \u2014 was covered by major media outlets and taken seriously by the scientific establishment in a way that no psychedelic research had been since the 1960s. The renaissance, from that point, was underway.`}
+          In the 1990s, a small number of researchers began the painstaking process of navigating the regulatory obstacles. Rick Doblin, who had founded the Multidisciplinary Association for Psychedelic Studies (MAPS) in 1986, spent years building relationships with the FDA and DEA. Franz Vollenweider in Zurich published careful neuroimaging studies of psilocybin in the late 1990s. The groundwork was being laid by people with enormous patience and a long-term vision.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The breakthrough came in 2006, when Roland Griffiths at Johns Hopkins published "Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance" in Psychopharmacology. It was the first rigorously designed, placebo-controlled study of psilocybin in healthy volunteers in nearly four decades. The results were remarkable: over 60% of participants rated the experience as among the most meaningful of their lives, and the effects persisted at 14-month follow-up.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The Griffiths study didn't just produce data. It produced credibility. Here was Johns Hopkins, one of the most prestigious medical institutions in the world, publishing in a peer-reviewed journal that psilocybin could produce profound, lasting, positive psychological changes. The door cracked open.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          What followed was an accelerating cascade. Imperial College London launched its own psilocybin research program under David Nutt and Robin Carhart-Harris. NYU began studying psilocybin for end-of-life anxiety. MAPS advanced MDMA-assisted therapy for PTSD through Phase 3 clinical trials. The FDA granted breakthrough therapy designation to psilocybin for treatment-resistant depression in 2018 and to MDMA for PTSD in 2017.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Where Things Stand Now
+          The New Landscape
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          The regulatory landscape has shifted significantly in the years since. In 2020, Oregon passed Measure 109, becoming the first U.S. state to legalize supervised psilocybin therapy for adults. Colorado followed in 2022 with Proposition 122. In 2023, Australia became the first country to formally reclassify psilocybin for therapeutic use, allowing psychiatrists to prescribe it for treatment-resistant depression.
+          The legal and regulatory landscape is now shifting faster than most people in the field expected. Oregon became the first state to legalize regulated psilocybin services through Measure 109 in 2020, with the first licensed service centers opening in 2023. Colorado followed with Proposition 122, which decriminalized psilocybin and created a framework for regulated therapeutic use. Cities across the country, Denver, Oakland, Santa Cruz, Seattle, Ann Arbor, Washington D.C., have decriminalized or deprioritized enforcement of psychedelic possession.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Clinical trials are underway at dozens of institutions. The FDA has granted psilocybin Breakthrough Therapy Designation for treatment-resistant depression and major depressive disorder, a status that expedites the review process and signals that the regulatory environment is changing.
+          {`Australia became the first country to reschedule psilocybin and MDMA for therapeutic use in 2023. Canada has granted exemptions for psilocybin-assisted therapy in palliative care. The global momentum is real, and it's not slowing down.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`But the question of who benefits \u2014 and who has been left out \u2014 remains unresolved. The current renaissance is predominantly white and Western. The indigenous communities whose traditions kept this knowledge alive through centuries of persecution, who paid the price of Wasson's publication in ways that Wasson himself did not, are largely absent from the clinical trials, the investment discussions, and the policy debates. Organizations like the Chacruna Institute and the Indigenous Peyote Conservation Initiative have pushed, with some success, to ensure that indigenous voices are part of these conversations. But the structural disparities are real.`}
+          {`But there's a tension at the center of this momentum, and I think it's one that deserves more honest attention than it usually gets.`}
+        </p>
+
+        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
+          The Appropriation Question
+        </h2>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The modern psychedelic renaissance is, in large part, a story of Western science "discovering" what indigenous cultures have known and practiced for millennia. The knowledge that psilocybin mushrooms can produce profound healing experiences isn't new. It's ancient. And the people who preserved that knowledge, often at great personal cost, through centuries of colonial suppression, have received very little of the credit, recognition, or financial benefit from the current boom.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          The history of sacred mushrooms is, in part, a history of what gets preserved and what gets erased, who gets credit and who bears the cost, which knowledge systems are treated as science and which are treated as superstition. A field that is serious about doing this work well cannot afford to ignore that history. It is not background. It is the context in which everything else takes place.
+          The psychedelic industry is now projected to be worth billions. Pharmaceutical companies are patenting synthetic psilocybin formulations. Retreat centers charge thousands of dollars for guided mushroom experiences. Venture capital flows into psychedelic startups. And the Mazatec communities who kept this knowledge alive through four hundred years of colonial repression are still, by and large, poor and marginalized.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`This is not a comfortable thing to sit with, and I don't think there are easy answers. The clinical research is genuinely important; it's producing treatments for depression, PTSD, addiction, and end-of-life distress that could help millions of people. I don't think the response is to stop the research or shut down the clinical programs. But I do think the response includes acknowledging the debt, centering indigenous voices in conversations about psychedelic policy, and building reciprocity into the economic structures that are being created.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Organizations like the Indigenous Peyote Conservation Initiative and the Chacruna Institute are doing important work in this space, advocating for indigenous rights and pushing back against the extractive dynamics of the psychedelic industry. Whether the industry listens remains to be seen.
+        </p>
+
+        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
+          What the History Teaches
+        </h2>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`If there's one thing I take from this long, tangled history, it's this: every era gets the relationship with psychedelics it deserves.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Indigenous cultures embedded these substances in frameworks of community, ceremony, and reciprocity. They treated them as sacred. And the practices endured for thousands of years.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          The 1960s West approached them with a combination of genuine curiosity and spectacular recklessness. The result was extraordinary creativity and devastating political backlash.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          The current moment is approaching them through the lens of clinical science and commercial opportunity. Whether that produces lasting benefit or just another cycle of enthusiasm and prohibition depends on whether we learn from the previous chapters.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The mushrooms have been here longer than any of our institutions. They'll be here after we're gone. The question is whether we can be smarter this time about how we relate to them, and to the people who understood them long before we did.`}
         </p>
       </>
     ),
     references: [
       {
-        text: 'Samorini, G. (1992). The oldest representations of hallucinogenic mushrooms.',
-        source: 'Integration',
+        text: 'Samorini, G. (1992). The oldest representations of hallucinogenic mushrooms in the world (Sahara Desert, 9000\u20137000 B.P.).',
+        source: 'Integration: Journal of Mind-Moving Plants and Culture',
       },
       {
         text: 'Wasson, R.G. (1957). Seeking the magic mushroom.',
         source: 'Life Magazine',
       },
       {
-        text: 'Hofmann, A. (1958). Psilocybin and psilocin.',
+        text: 'Hofmann, A. (1958). Psilocybin and psilocin, two psychotropic tryptamines of Mexican origin.',
         source: 'Helvetica Chimica Acta',
       },
       {
@@ -696,16 +844,24 @@ export const posts: Post[] = [
         source: '',
       },
       {
-        text: 'Griffiths, R.R., et al. (2006). Psilocybin can occasion mystical-type experiences.',
+        text: 'Griffiths, R.R., et al. (2006). Psilocybin can occasion mystical-type experiences having substantial and sustained personal meaning and spiritual significance.',
         source: 'Psychopharmacology',
       },
       {
-        text: 'Schultes, R.E. & Hofmann, A. (1979). Plants of the Gods.',
+        text: 'Schultes, R.E. & Hofmann, A. (1979). Plants of the Gods: Their Sacred, Healing, and Hallucinogenic Powers.',
         source: 'McGraw-Hill',
       },
       {
-        text: "Ehrlichman, J. (1994). Interview. Published in Baum, D. (2016). Legalize it all.",
+        text: 'Guzm\u00e1n, G. (2008). Hallucinogenic mushrooms in Mexico: An overview.',
+        source: 'Economic Botany',
+      },
+      {
+        text: "Ehrlichman, J. (1994). Interview with Dan Baum. Published in Baum, D. (2016). Legalize it all.",
         source: "Harper's Magazine",
+      },
+      {
+        text: 'Doblin, R. (2001). Regulation of the medical use of psychedelics and marijuana.',
+        source: 'Doctoral dissertation, Harvard University',
       },
     ],
   },
@@ -721,107 +877,143 @@ export const posts: Post[] = [
     content: () => (
       <>
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Most psychedelic integration happens from the neck up. You talk about what happened. You journal about it. You turn the experience over in your mind, looking for meaning. Then you go home and wonder why, three weeks later, nothing has changed. The insights feel distant. The opening has closed.`}
+          Most psychedelic integration happens from the neck up. You sit in a room (or on a Zoom call) and you talk about what happened. You narrate the visions, try to articulate the insights, wrestle the ineffable into language. And then you go home and wonder why, three weeks later, you feel like nothing has changed.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The problem is that we treat the mind as if it exists independently of the body. We are the children of Descartes, and he told us the mind and body are separate substances \u2014 the thinking thing and the extended thing, cleanly divided. It was a useful fiction for seventeenth-century philosophy. It is a significant liability for psychedelic integration.`}
-        </p>
-
-        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          The Psychedelic Experience Is a Bodily Event
-        </h2>
-
-        <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Anyone who has taken psilocybin or a related compound knows, in their bones, that the experience is not purely cognitive. The body shakes. Breath changes. Tears come from somewhere below thought. Temperature fluctuates. There is nausea, tingling, a sense of energy moving through tissue. The body is not a passive vehicle for the mind during these states. It is a full participant \u2014 registering, responding, processing, sometimes releasing things that have been held in tissue for years.`}
+          {`I think there's a reason for that, and it has to do with a fundamental oversight in how Western psychology approaches both psychedelics and healing in general: we treat the mind as if it exists independently of the body. As if insight is sufficient. As if understanding something intellectually is the same as processing it.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          If the body is present during the experience, it is also present in the aftermath. And approaches to integration that bypass the body are working with only half the picture.
+          {`It's not. And a growing body of work, from trauma research, somatic psychology, and the neuroscience of embodiment, suggests that what happens in the body during and after a psychedelic experience may matter as much as what happens in the mind.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Van der Kolk and the Somatic Storage of Trauma
+          The Mind-Body Split
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Bessel van der Kolk's 2014 book `}<em>The Body Keeps the Score</em>{` synthesized decades of trauma research into a single, paradigm-shifting argument: trauma is not primarily a cognitive phenomenon. It is a somatic one. Traumatic memory is stored not as coherent narrative but as fragmented sensory data \u2014 images, sounds, body sensations \u2014 that can be triggered in the present by cues that bear no obvious relationship to the original event. This is why talk therapy, while useful, often hits a ceiling with trauma survivors. You can understand intellectually why you respond the way you do and still respond that way, because the response lives below the level of understanding.`}
+          Western psychology inherited a problem from Descartes. The idea that mind and body are separate substances (res cogitans and res extensa) has shaped how we think about healing for four hundred years. Therapy is talk. Insight is cognitive. The body is the thing you transport your brain around in.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`The implications for psychedelic integration are direct. Psilocybin and related compounds appear to access exactly this kind of material \u2014 the pre-verbal, pre-narrative content that lives in the body's memory. People report that psychedelic experiences surface emotions, images, and physical sensations that seem to have nothing to do with their conscious concerns. This is not random. It is the system doing what it does when the filters come down: surfacing what has been held.`}
+          {`This framework has produced enormous achievements. Cognitive behavioral therapy works. Psychopharmacology works. I'm not dismissing any of it. But the framework has a blind spot, and that blind spot becomes a canyon when you're trying to integrate a psychedelic experience.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`If van der Kolk is right \u2014 and the evidence strongly suggests he is \u2014 then integrating this material requires somatic approaches, not only cognitive ones. The body needs to finish what the experience started.`}
+          {`Psychedelic experiences are not primarily cognitive events. Ask anyone who's had a significant psilocybin or MDMA session and they'll describe it in the language of the body long before they describe it in the language of the mind. Waves of sensation. Energy moving through the chest. Shaking. Crying. Nausea that feels emotional rather than physical. The sense that something is being released from the muscles, the gut, the jaw. The body doesn't just observe the psychedelic experience; it participates in it, stores it, and processes it through channels that talking alone can't access.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Peter Levine and the Unfinished Discharge
+          What Trauma Research Tells Us
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Peter Levine's work in Somatic Experiencing (SE) offers one of the most useful frameworks for understanding why. Drawing on observations of animals in the wild, Levine noted that prey animals who survive predator attacks \u2014 who mobilize to fight or flee and then escape \u2014 routinely complete the stress cycle through a spontaneous neurological discharge: shaking, trembling, deep breathing, orienting movements. After this discharge, they return to baseline. The threat is metabolized at a physiological level. The animal does not develop PTSD.`}
+          {`Bessel van der Kolk's The Body Keeps the Score, published in 2014, made a simple argument that upended a lot of clinical assumptions: trauma is stored in the body, not just the mind. Traumatic experiences leave physiological imprints, chronic tension patterns, dysregulated autonomic responses, disrupted interoception. You can understand your trauma intellectually and still be held hostage by it physically. The body hasn't gotten the memo that the threat is over.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          Humans do, because we routinely interrupt the discharge. We freeze the trembling. We hold the breath. We manage the expression of overwhelming activation because we are social animals in social situations where losing control is dangerous. The activation goes unfinished. It remains stored in the nervous system, expressing itself as chronic tension, dysregulation, and the heightened reactivity we recognize as trauma.
+          {`Van der Kolk's work draws on decades of research showing that traumatic memories are encoded differently than normal memories. They're stored not as coherent narratives but as fragmented sensory and somatic impressions, flashes, sounds, body states. This is why trauma survivors often can't "think" their way out of a flashback. The memory isn't in the thinking brain. It's in the nervous system.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`SE works by helping the nervous system complete these interrupted cycles, through a process Levine calls pendulation \u2014 oscillating gently between activation and settling, titrating the release rather than overwhelming the system. The goal is not catharsis. It is completion: the discharge that was interrupted, finally finished.`}
+          {`The implications for psychedelic integration are significant. If psychedelics surface traumatic material (and they frequently do, particularly at higher doses) that material often emerges somatically. People don't just remember difficult experiences during a psilocybin session. They re-experience them in the body. Muscle tension, constricted breathing, pain in specific areas, trembling, waves of heat or cold. These aren't side effects. They're the body's way of processing what it's been holding.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`In the context of psychedelic integration, this framework suggests that some of what emerges during and after a session \u2014 the shaking, the crying, the spontaneous movement, the waves of intense emotion \u2014 may be exactly these unfinished cycles surfacing for completion. The most useful thing a skilled somatic practitioner can do is not interpret these experiences but help the person stay with them long enough to let the nervous system do what it knows how to do.`}
+          {`And if the integration process is purely verbal, if the whole protocol is "let's talk about what happened," then the somatic dimension of the experience goes unprocessed. The insights may fade because they were never fully embodied.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Polyvagal Theory and the Autonomic Map
+          Somatic Experiencing and the Wisdom of Shaking
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Stephen Porges's Polyvagal Theory, developed through the 1990s and 2000s and synthesized in his 2011 book, offers a complementary map. Porges identified three distinct states of the autonomic nervous system: the ventral vagal state, associated with safety, social engagement, and calm activation; the sympathetic state, associated with mobilization for fight or flight; and the dorsal vagal state, associated with collapse, shutdown, and dissociation.`}
+          {`Peter Levine developed Somatic Experiencing (SE) in the 1970s based on an observation from animal behavior: wild animals experience potentially traumatic events constantly, being chased by predators, fighting for territory, but they don't develop PTSD. After a threat, an animal will literally shake, tremor, and discharge the survival energy, then return to baseline. The stress cycle completes.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Trauma, in this framework, is a matter of the nervous system becoming locked in sympathetic activation or dorsal vagal shutdown \u2014 unable to return to the ventral vagal safety of social engagement. The pathway back runs through the body, not through insight.`}
+          {`Humans, Levine argued, have the same discharge mechanisms. But our neocortex, our thinking brain, overrides them. We suppress the shaking because it feels weird. We "hold it together" because that's what our culture demands. And so the survival energy stays stuck. The stress cycle never completes. The body remains in a state of chronic, low-grade activation.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Psychedelic experiences can, in the span of a few hours, move a person through all three states \u2014 sometimes rapidly and sometimes overwhelmingly. This is part of why they are so powerful and part of why they require support. A person who spends an hour in a dorsal vagal collapse \u2014 the experience of ego annihilation, of psychic death \u2014 and then finds their way back to ventral vagal safety has, in some sense, rehearsed the full range of the nervous system in a compressed time frame. What this does to plasticity, to the system's sense of what is possible, may be part of the mechanism of therapeutic effect.`}
+          {`SE works by helping people track and complete these interrupted body processes. Through a practice Levine calls "pendulation," moving attention slowly between areas of activation and areas of calm in the body, the stuck energy can gradually release. It's not dramatic. It's not cathartic in the Hollywood sense. It's a slow, careful process of teaching the nervous system that it's safe to let go.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Diaphragmatic breathing \u2014 deep belly breathing that activates the vagus nerve \u2014 is one of the simplest and most evidence-supported tools for moving toward ventral vagal activation. It works directly on the physiology. And it is something that can be practiced before, during, and after a psychedelic session. The breath is always available. It is one of the body's own tools for regulation.`}
+          The relevance to psychedelic integration is direct. Psychedelics often activate exactly the kind of body-level processing that SE is designed to support. The trembling, the emotional release, the waves of sensation: these are the body completing stress cycles that may have been interrupted for years or decades. A somatic approach to integration {`doesn't`} just honor these processes. It actively supports them.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          Grof and the Overlapping Territories
+          The Polyvagal Lens
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Stanislav Grof spent decades studying non-ordinary states of consciousness \u2014 first through LSD-assisted therapy in the 1950s and 60s, then, after prohibition, through the breathwork technique he developed with his wife Christina called Holotropic Breathwork. The parallels between the two modalities were not coincidental. Grof documented carefully that the states accessible through Holotropic Breathwork \u2014 which uses accelerated breathing, evocative music, and focused bodywork \u2014 overlap substantially with those accessible through psychedelics.`}
+          {`Stephen Porges's Polyvagal Theory, introduced in 1994 and developed extensively since, offers another framework for understanding the body's role in psychedelic experience.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          This convergence is significant. It suggests that the relevant variable is not the substance but the state {`\u2014`} and that body-based practices can access the same territory that psychedelics open up. For integration work, this means somatic practices are not merely adjuncts to the psychedelic experience. They may be continuations of it, pathways back into the same territory that can be used deliberately, sustainably, and without a compound.
+          The theory centers on the vagus nerve, the longest cranial nerve in the body, running from the brainstem through the heart, lungs, and gut. Porges identified three distinct autonomic states mediated by different branches of the vagus: the ventral vagal state (social engagement, safety, connection), the sympathetic state (fight or flight, mobilization), and the dorsal vagal state (freeze, collapse, shutdown).
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Most people cycle through these states throughout the day without awareness. But trauma can lock people into chronic sympathetic activation (hypervigilance, anxiety) or dorsal vagal collapse (numbness, dissociation, depression). The system gets stuck.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Psychedelics appear to move people through these autonomic states rapidly and unpredictably. This is partly why the experience can feel like an emotional roller coaster; you're not just having thoughts and visions. Your autonomic nervous system is cycling through states it may have been avoiding for years. The terror you feel might be sympathetic activation. The peaceful dissolution might be a shift into ventral vagal safety. The heaviness or paralysis might be dorsal vagal.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Understanding this doesn't require accepting Polyvagal Theory uncritically; there are legitimate critiques of some of Porges's specific neuroanatomical claims. But the broad framework, that the autonomic nervous system plays a central role in emotional experience and that psychedelics engage this system directly, is well-supported and practically useful.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          For integration, the polyvagal lens suggests that practices which help regulate the autonomic nervous system, breathing techniques, gentle movement, co-regulation with a trusted other, might be as important as cognitive processing in stabilizing the gains from a psychedelic experience.
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          TRE and the Tremoring Mechanism
+          Breathwork: The Overlap
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`David Berceli's Trauma Releasing Exercises (TRE) work through a mechanism that Levine's animal observation would predict: they deliberately induce the body's natural tremoring response. The exercises target the psoas \u2014 the deep hip flexor that connects the lumbar spine to the femur and is often described as the body's primary fight-or-flight muscle \u2014 progressively fatiguing it until the neurogenic tremoring response kicks in spontaneously.`}
+          {`The connection between breathwork and psychedelic states isn't a metaphor. It's a physiological overlap.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Practitioners describe the tremors as moving through the body in waves, often accompanied by heat, emotion, and a gradual deepening sense of relaxation. The experience is not painful. It is, for many people, profoundly releasing \u2014 a felt sense of something letting go that had been held, perhaps for years, without awareness.`}
+          Stanislav Grof, one of the pioneers of psychedelic research in the 1960s, developed Holotropic Breathwork specifically as a non-pharmacological method for accessing altered states of consciousness after psychedelics were banned. The technique, extended periods of accelerated breathing combined with evocative music, produces experiences that participants frequently describe in terms virtually identical to psychedelic reports: ego dissolution, emotional catharsis, visionary content, somatic energy release.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`TRE requires no therapist and can be practiced independently once learned. This makes it a practical option for people doing post-session integration work on their own \u2014 a body-based complement to journaling, therapy, and meditation.`}
+          {`The mechanism isn't entirely clear, but it likely involves changes in blood CO2 levels, altered cerebral blood flow, and engagement of the autonomic nervous system. Whatever the mechanism, the phenomenological overlap is striking enough to suggest that the body has its own pathways to altered states, and that breathwork during the integration period might help consolidate and extend the opening that psychedelics create.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          Even simpler practices matter. Slow, diaphragmatic breathing activates the ventral vagal pathway, promoting the sense of safety that is foundational to processing difficult material. Box breathing, coherent breathing, and basic pranayama techniques all shift autonomic tone toward parasympathetic dominance, the {`"rest and digest"`} state in which the body is most able to heal and integrate.
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`I'm not claiming that breathwork is equivalent to psilocybin. It's not. But I am saying that the body already knows how to process intensity, and conscious breathing is one of the most accessible ways to support that process.`}
+        </p>
+
+        <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
+          Tremoring and TRE
+        </h2>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`David Berceli's Tension and Trauma Release Exercises (TRE) are based on a straightforward premise: the human body has a natural tremoring mechanism for discharging stress, and most of us have suppressed it.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`TRE uses a series of simple exercises to fatigue specific muscle groups, particularly the psoas, the deep hip flexor that Berceli and others have called the "muscle of the soul" for its role in the fight-flight response. Once fatigued, these muscles begin to tremor spontaneously. The practitioner then allows the tremoring to spread through the body, releasing stored tension without cognitive processing.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`The evidence base for TRE is still developing; we're talking about pilot studies and clinical observations rather than large RCTs. But the anecdotal reports from practitioners who combine TRE with psychedelic integration are consistent: the tremoring seems to help discharge physical tension that arises during psychedelic sessions, and regular TRE practice during the integration period appears to support the consolidation of changes.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`This connects back to Levine's observation about animals completing the stress cycle. The shake is the discharge. And if psychedelics are activating old survival energy, releasing it from the muscles and tissues where it's been stored, then giving the body a way to complete that release might be a critical piece of the integration puzzle.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
@@ -829,49 +1021,65 @@ export const posts: Post[] = [
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Recent neuroscience adds another dimension to the case for somatic integration. Psychedelics appear to open what researchers have called a neuroplasticity window \u2014 a period of heightened synaptic plasticity following a session during which new patterns of connection can be more easily formed. A 2018 study by Ly and colleagues in `}<em>Cell Reports</em>{` showed that psychedelics promote structural and functional neural plasticity. A 2021 study by Shao and colleagues in `}<em>Neuron</em>{` found that psilocybin induces rapid and persistent growth of dendritic spines \u2014 the tiny protrusions on neurons through which connections form \u2014 suggesting that the window for new learning and new patterns may last days or even weeks after a session.`}
+          {`Here's where the timing question becomes interesting.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`If this is true, then what you do with your body in the days following a psychedelic session may matter more than we have assumed. Exercise \u2014 which promotes the release of BDNF, a protein that supports neuronal growth and has been called "Miracle-Gro for the brain" \u2014 may synergize with the psychedelic's plasticity effects. A 2016 study by Sleiman and colleagues in `}<em>eLife</em>{` showed that even a single bout of exercise significantly increases BDNF expression. The implication is that somatic practices in the integration window are not merely supportive. They may actively extend and deepen the neurological effects of the experience itself.`}
+          {`There's growing evidence that psychedelics open a window of heightened neuroplasticity, a period after the acute experience during which the brain is more receptive to structural and functional change. A 2024 study in Cell found evidence of dendritic spine remodeling in the medial frontal cortex following a single dose of psilocybin, with changes persisting for weeks. BDNF (brain-derived neurotrophic factor), a protein critical for neural growth and plasticity, appears to be upregulated in the days following psychedelic experience.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`This window, conservatively 24 to 72 hours, possibly extending for weeks, is when the brain is most amenable to forming new patterns. And here's what I find fascinating: physical activity, particularly aerobic exercise, is one of the most potent natural stimulators of BDNF production. The neuroplasticity window opened by psilocybin may overlap synergistically with the neuroplasticity effects of exercise.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`This is largely theoretical at this point. No one has run a controlled trial specifically examining whether exercise during the post-psychedelic neuroplasticity window amplifies therapeutic outcomes. But the mechanistic logic is sound, and the practical implication is worth considering: what you do with your body in the days and weeks after a psychedelic experience might matter more than we currently appreciate.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`Movement practices, yoga, dance, even walking in nature; these aren't just "nice to do" during integration. They may be actively capitalizing on a biological window of opportunity that the psychedelic has opened.`}
         </p>
 
         <h2 className="font-serif text-2xl font-bold text-earth-900 mt-12 mb-4">
-          An Honest Note on the Evidence
+          {`What I'm Not Saying`}
         </h2>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`Most of the somatic integration literature \u2014 SE, TRE, Holotropic Breathwork \u2014 is observational and case-based rather than randomized and controlled. The field does not yet have the RCTs it needs to make strong claims about which specific practices produce which specific outcomes in psychedelic integration contexts. This is worth acknowledging.`}
+          I want to be clear about the limitations here because this space is drowning in people who present theoretical frameworks as established fact.
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`What it does have is a robust theoretical framework, consistent practitioner and participant reports, and a growing body of convergent evidence from adjacent fields \u2014 trauma research, autonomic neuroscience, neuroplasticity \u2014 that makes the somatic approach highly plausible. The absence of RCTs does not mean the approach does not work. It means we don't yet know precisely why it works or how to optimize it. That work is underway.`}
+          {`Most of the somatic integration literature is based on clinical observation, case studies, and theoretical extrapolation from adjacent research domains. We have strong evidence that psychedelics increase neuroplasticity. We have strong evidence that trauma is stored somatically. We have strong evidence that physical practices affect autonomic regulation. What we don't have yet is a robust body of controlled trials specifically examining somatic approaches to psychedelic integration versus talk-based approaches.`}
         </p>
 
         <p className="text-lg leading-relaxed text-earth-800 mb-6">
-          {`In the meantime: if you have had a psychedelic experience and you're sitting with material that talking about doesn't seem to touch, consider moving toward it with your body. Walk. Breathe deliberately. Let yourself shake if something wants to shake. Find a practitioner who works somatically and understands psychedelic states. The insight may already be in there. Sometimes the body just needs permission to finish what the medicine started.`}
+          {`The logic is compelling. The anecdotal evidence is consistent. The mechanistic rationale is sound. But "compelling logic" and "consistent anecdotes" are not the same as "proven." I think somatic integration practices are almost certainly important. I'm not prepared to say we know exactly how important, or which specific practices are most effective, or what the optimal protocols look like.`}
+        </p>
+
+        <p className="text-lg leading-relaxed text-earth-800 mb-6">
+          {`What I will say is this: if your integration practice is entirely verbal, if the whole process is sitting in a chair and narrating your experience, you're probably leaving something on the table. The body had the experience too. It deserves to be part of the conversation.`}
         </p>
       </>
     ),
     references: [
       {
-        text: 'Van der Kolk, B. (2014). The Body Keeps the Score.',
+        text: 'Van der Kolk, B. (2014). The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma.',
         source: 'Viking',
       },
       {
-        text: 'Levine, P.A. (1997). Waking the Tiger.',
+        text: 'Levine, P.A. (1997). Waking the Tiger: Healing Trauma.',
         source: 'North Atlantic Books',
       },
       {
-        text: 'Porges, S.W. (2011). The Polyvagal Theory.',
+        text: 'Porges, S.W. (2011). The Polyvagal Theory: Neurophysiological Foundations of Emotions, Attachment, Communication, and Self-Regulation.',
         source: 'W.W. Norton',
       },
       {
-        text: 'Grof, S. (1988). The Adventure of Self-Discovery.',
+        text: 'Grof, S. (1988). The Adventure of Self-Discovery: Dimensions of Consciousness and New Perspectives in Psychotherapy.',
         source: 'SUNY Press',
       },
       {
-        text: 'Berceli, D. (2005). Trauma Releasing Exercises.',
+        text: 'Berceli, D. (2005). Trauma Releasing Exercises: A Revolutionary New Method for Stress/Trauma Recovery.',
         source: 'BookSurge',
       },
       {
@@ -879,11 +1087,11 @@ export const posts: Post[] = [
         source: 'Cell Reports',
       },
       {
-        text: 'Shao, L.X., et al. (2021). Psilocybin induces rapid and persistent growth of dendritic spines.',
+        text: 'Shao, L.X., et al. (2021). Psilocybin induces rapid and persistent growth of dendritic spines in frontal cortex in vivo.',
         source: 'Neuron',
       },
       {
-        text: 'Sleiman, S.F., et al. (2016). Exercise promotes BDNF expression.',
+        text: 'Sleiman, S.F., et al. (2016). Exercise promotes the expression of brain derived neurotrophic factor (BDNF) through the action of the ketone body \u03B2-hydroxybutyrate.',
         source: 'eLife',
       },
     ],
